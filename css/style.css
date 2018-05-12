@@ -1,0 +1,2313 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight/GothamProLight.eot");
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+/* =48px */
+h2 {
+  font-size: 52px;
+  font-size: 3.25rem;
+}
+
+/* =52px */
+h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+/* =36px */
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/* =20px */
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* =16px */
+p {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* =16px */
+.header,
+.main_red {
+  max-width: 1920px;
+  height: auto;
+  background: url(../img/bg-red.png);
+}
+
+.main_white {
+  max-width: 1920px;
+  background: #fff;
+}
+
+.main_grey {
+  max-width: 1920px;
+  background: #f5f5f7;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  position: relative;
+  
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   HEADER+NAV  xxxxxxxxxxxxxxxxxxxxxxx*/
+nav {
+  position: relative;
+  margin-top: 23px;
+  display: flex;
+}
+nav ul.nav-justified {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  display: flex;
+  margin-top: 10px;
+}
+nav ul.nav-justified .move_left {
+  margin-left: -50px;
+}
+nav ul.nav-justified .move_right {
+  margin-right: -50px;
+}
+nav ul.nav-justified li {
+  width: 100%;
+  display: inline-block;
+  list-style-type: none;
+  z-index: 10;
+}
+nav ul.nav-justified li a {
+  outline: none;
+  text-decoration: none;
+  padding: 0;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "GothamProMedium";
+}
+nav ul.nav-justified li .shift {
+  padding-left: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  z-index: 5;
+}
+.logo img {
+  position: relative;
+  margin: -85px 0px 0px -20px;
+}
+
+.replica {
+  margin: 30px 0px;
+  color: #fff;
+}
+.replica h1 {
+  font-family: "GothamProBlack";
+  text-align: center;
+  text-transform: uppercase;
+}
+.replica p {
+  font-family: "GothamProRegular";
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.bt_wrap {
+  text-align: center;
+  margin: 0px 0px 11.5% 0px;
+  display: block;
+}
+.bt_wrap .ghost-button-rounded-corners {
+  display: inline-block;
+  width: 255px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  text-align: center;
+  font-family: "GothamProMedium";
+  font-size: 16px;
+  line-height: 50px;
+  outline: none;
+  text-decoration: none;
+  margin: 10px 15px;
+}
+.bt_wrap .ghost-button-rounded-corners:hover {
+  background-color: #aac65a;
+  color: #fff;
+  border: 1px solid #aac65a;
+}
+
+.wrap_border {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e5;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ОБЩАЯ ИНФОРМАЦИЯ О ФИТНЕСЕ   xxxxxxxxxxxxxxxxxxxxxxx*/
+.content {
+  position: relative;
+}
+.content h3 {
+  margin-top: 90px;
+  width: 100%;
+  text-align: center;
+  font-family: "GothamProBlack";
+  color: #d65045;
+}
+.content h3 span {
+  font-family: "GothamProLight";
+}
+.content h3 .black {
+  font-family: "GothamProBlack";
+  color: #000;
+}
+.content .bg_wrap {
+  display: flex;
+  justify-content: center;
+}
+.content .bg_wrap img {
+  position: absolute;
+  margin-top: 45px;
+}
+.content .wrap_top {
+  margin: 45px 0px 90px 0px;
+  width: 100%;
+}
+.content .wrap_text {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.content .wrap_text h4 {
+  font-family: "GothamProMedium";
+  color: #3b3e47;
+}
+.content .wrap_text p {
+  font-family: "GothamProRegular";
+  color: #626670;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ТРЕНЕР   xxxxxxxxxxxxxxxxxxxxxxx*/
+.trainer_content {
+  position: relative;
+}
+.trainer_content .content_responsive h4 {
+  font-family: "GothamProRegular";
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  color: #8a8e99;
+  margin-top: 90px;
+}
+.trainer_content .content_responsive h3 {
+  font-family: "GothamProBlack";
+  line-height: 70px;
+  color: #3b3e47;
+}
+.trainer_content .content_responsive p {
+  margin: 20px 0px;
+  font-family: "GothamProRegular";
+  color: #575b66;
+}
+.trainer_content .text_responsive p {
+  margin: 20px 0px;
+  margin: 0;
+  font-family: "GothamProRegular";
+  color: #575b66;
+}
+.trainer_content .text_too_responsive {
+  margin-bottom: 100px;
+}
+.trainer_content .text_too_responsive p {
+  margin: 20px 0px;
+  font-family: "GothamProRegular";
+  color: #575b66;
+}
+
+@media (min-width: 991px) and (max-width: 1600000px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1600000px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+.trainer_photo {
+  margin-top: 142px;
+}
+
+@media (min-width: 0px) and (max-width: 579px) {
+  .hidden-xs-up {
+    display: none !important;
+  }
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   АБОНЕМЕНТЫ   xxxxxxxxxxxxxxxxxxxxxxx*/
+.new_year_wrap {
+  margin-top: 80px;
+  text-align: center;
+}
+.new_year_wrap .caption {
+  width: 100%;
+  display: block;
+}
+.new_year_wrap .caption h2 {
+  font-family: "GothamProBlack";
+  color: #fff;
+  text-transform: uppercase;
+}
+.new_year_wrap .button_wrap {
+  width: 100%;
+  display: block;
+  margin: 35px 0px;
+  /*xxxxxxxxxxxxxxxxxxxxxxxxx  ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
+}
+.new_year_wrap .button_wrap .active {
+  z-index: 2;
+  background-color: #fac746;
+  color: #876c27;
+  border: none;
+}
+.new_year_wrap .button_wrap a {
+  display: inline-block;
+  width: 200px;
+  color: #fff;
+  border-radius: 22px;
+  text-align: center;
+  font-family: "GothamProMedium";
+  font-size: 0.875rem;
+  line-height: 2.8125rem;
+  outline: none;
+  text-decoration: none;
+}
+.new_year_wrap .button_wrap a:hover {
+  background-color: #fac746;
+  color: #876c27;
+}
+@media (min-width: 480px) {
+  .new_year_wrap .button_wrap .modal-dialog {
+    max-width: 400px;
+    margin: 3.5rem auto;
+  }
+}
+.new_year_wrap .button_wrap .modal-content {
+  border-radius: 20px;
+  border: none;
+}
+.new_year_wrap .button_wrap .modal-content .modal-top {
+  text-align: center;
+  margin: 0px 55px;
+}
+.new_year_wrap .button_wrap .modal-content .modal-top p {
+  margin-top: 55px;
+  color: #575b66;
+  line-height: 24px;
+  font-family: "GothamProRegular";
+}
+.new_year_wrap .button_wrap .modal-content .modal-top .close {
+  width: 20px;
+  padding: 0px;
+}
+.new_year_wrap .button_wrap .modal-content .modal-top .close span {
+  color: #c2c4cc;
+  width: 20px;
+  height: 20px;
+  margin: 3px 35px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: "GothamProRegular";
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+}
+.new_year_wrap .button_wrap .modal-content .form-group {
+  margin: 0px 55px;
+  color: #575b66;
+}
+.new_year_wrap .button_wrap .modal-content .form-group .form-control {
+  margin: 10px 5px;
+  padding: .4rem 1.5rem;
+  width: 96.5%;
+  border: 1px solid #d9dade;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #575b66;
+}
+.new_year_wrap .button_wrap .modal-content .form-group .form-control:focus {
+  box-shadow: none;
+}
+.new_year_wrap .button_wrap .modal-content .application_wrap {
+  margin: 0px 55px;
+}
+.new_year_wrap .button_wrap .modal-content .application_wrap .application_button {
+  width: 96.5%;
+  margin: 15px 0px 60px 0px;
+  background-color: #aac65a;
+  color: #fff;
+  font-family: "GothamProRegular";
+  line-height: 3.125rem;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx  THE_END ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
+.subscription_wrap {
+  text-align: center;
+  position: relative;
+  margin-bottom: 125px;
+  /*xxxxxxxxxxxxxxxxxxxxxxxxx   ПОКУПКА АБОНЕМЕНТЕ ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+}
+.subscription_wrap .subscrip_two {
+  margin: 40px;
+}
+.subscription_wrap .subscrip_one,
+.subscription_wrap .subscrip_two,
+.subscription_wrap .subscrip_three {
+  display: inline-block;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.subscription_wrap .subscrip_one .candy_wrap,
+.subscription_wrap .subscrip_one .amulet_wrap,
+.subscription_wrap .subscrip_one .gift_wrap,
+.subscription_wrap .subscrip_two .candy_wrap,
+.subscription_wrap .subscrip_two .amulet_wrap,
+.subscription_wrap .subscrip_two .gift_wrap,
+.subscription_wrap .subscrip_three .candy_wrap,
+.subscription_wrap .subscrip_three .amulet_wrap,
+.subscription_wrap .subscrip_three .gift_wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: -24px -14px;
+}
+.subscription_wrap .subscrip_one h5,
+.subscription_wrap .subscrip_two h5,
+.subscription_wrap .subscrip_three h5 {
+  font-family: "GothamProBlack";
+  line-height: 1.5rem;
+  color: #575b66;
+  text-transform: uppercase;
+}
+.subscription_wrap .subscrip_one .price,
+.subscription_wrap .subscrip_two .price,
+.subscription_wrap .subscrip_three .price {
+  font-family: "GothamProLight";
+  font-size: 3.25rem;
+  line-height: 5rem;
+  color: #9aaf4e;
+  margin-top: 30px;
+}
+.subscription_wrap .subscrip_one p,
+.subscription_wrap .subscrip_two p,
+.subscription_wrap .subscrip_three p {
+  font-family: "GothamProLight";
+  color: #9296a0;
+}
+.subscription_wrap .gift_massage_gray,
+.subscription_wrap .gift_massage_yellow,
+.subscription_wrap .gift_massage_red {
+  text-align: center;
+  position: relative;
+  color: #fff;
+  margin: 45px -2px 50px -10px;
+}
+.subscription_wrap .gift_massage_gray p,
+.subscription_wrap .gift_massage_yellow p,
+.subscription_wrap .gift_massage_red p {
+  font-family: "GothamProMedium";
+  line-height: 3.125rem;
+  margin-top: -56px;
+}
+.subscription_wrap .gift_massage_yellow p {
+  color: #876c27;
+}
+.subscription_wrap .gift_massage_red {
+  width: 113%;
+  margin: 45px 0px 50px -17px;
+}
+.subscription_wrap .gift_massage_red p {
+  color: #fff;
+}
+.subscription_wrap .button_wrap_green {
+  position: absolute;
+}
+.subscription_wrap .button_wrap_green .select_button {
+  background: #aac65a;
+  font-family: "GothamProMedium";
+  font-size: 1rem;
+  line-height: 3.125rem;
+  color: #fff;
+  text-decoration: none;
+  width: 175px;
+  display: block;
+  margin: -25px 0px 0px 50px;
+  border-radius: 20px;
+  outline: none;
+}
+@media (min-width: 992px) {
+  .subscription_wrap .modal-lg {
+    max-width: 940px;
+  }
+  .subscription_wrap .modal-content {
+    border-radius: 15px;
+    border: none;
+  }
+  .subscription_wrap .subscription_payment {
+    width: 100%;
+    display: flex;
+    justify-content: flex-srart;
+  }
+  .subscription_wrap .subscription_payment .payment_left {
+    width: 42.5%;
+    background: url(../img/bg-red.png);
+    border-radius: 15px 0px 0px 15px;
+  }
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three {
+    margin: 90px 0px 90px;
+  }
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two .gift_massage_gray,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two .gift_massage_yellow,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three .gift_massage_gray,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three .gift_massage_yellow {
+    margin: 45px -2px 20px -10px;
+  }
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_gray p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_yellow p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two .gift_massage_gray p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two .gift_massage_yellow p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three .gift_massage_gray p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three .gift_massage_yellow p {
+    line-height: 2.5rem;
+  }
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_red,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two .gift_massage_red,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three .gift_massage_red {
+    margin: 45px -2px 20px -17px;
+  }
+  .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_red p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_two .gift_massage_red p,
+  .subscription_wrap .subscription_payment .payment_left .subscrip_three .gift_massage_red p {
+    line-height: 2.5rem;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth {
+    width: 57%;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .close {
+    width: 20px;
+    padding: 0px;
+    margin: 5px 10px;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .close span {
+    color: #c2c4cc;
+    width: 20px;
+    height: 20px;
+    margin: 3px -10px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "GothamProRegular";
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content {
+    margin: 50px 55px;
+    text-align: justify;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content p {
+    font-family: "GothamProRegular";
+    color: #575b66;
+    line-height: 24px;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content p span {
+    color: #3b3e47;
+    font-family: "GothamProMedium";
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content .ways_of {
+    display: flex;
+    justify-content: flex-srart;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content .ways_of p {
+    color: #c2c4cc;
+    font-family: "GothamProMedium";
+    text-transform: uppercase;
+    margin: 15px 10px 10px 0px;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content .ways_of img {
+    height: 35px;
+    margin: 8px 10px;
+  }
+  .subscription_wrap .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
+    width: 75.5%;
+    margin: 35px 0px 40px 0px;
+    background-color: #aac65a;
+    color: #fff;
+    font-family: "GothamProRegular";
+    line-height: 3.125rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   THE-END ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   РАСПИСАНИЕ  xxxxxxxxxxxxxxxxxxxxxxx*/
+.schedule_wrap {
+  position: relative;
+  text-align: center;
+  margin-top: 90px;
+}
+.schedule_wrap .wrap_caption {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.schedule_wrap .wrap_caption h3 {
+  font-family: "GothamProBlack";
+  color: #3b3e47;
+}
+.schedule_wrap .schedule_wrap_img {
+  display: block;
+  margin-bottom: 75px;
+}
+.schedule_wrap .schedule_wrap_img img {
+  width: 100%;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   МОТИВАЦИЯ ДЛЯ КЛИЕНТА   xxxxxxxxxxxxxxxxxxxxxxx*/
+.motivation_wrap {
+  position: relative;
+  margin-top: 90px;
+}
+.motivation_wrap .wrap_caption {
+  display: block;
+  text-align: center;
+}
+.motivation_wrap .wrap_caption h3 {
+  font-family: "GothamProBlack";
+  color: #3b3e47;
+}
+.motivation_wrap .motiv_client {
+  width: 100%;
+  display: block;
+  margin: 55px 0px 70px 0px;
+}
+.motivation_wrap .motiv_client h4 {
+  font-family: "GothamProMedium";
+  color: #d65045;
+}
+.motivation_wrap .motiv_client p {
+  font-family: "GothamProRegular";
+  line-height: 1.5rem;
+  color: #6c7079;
+  margin-bottom: 25px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ЗАПИСАТСЯ НА ТРЕНИРОВКУ   xxxxxxxxxxxxxxxxxxxxxxx*/
+.trial_subscription_wrap {
+  display: block;
+}
+.trial_subscription_wrap .subscription {
+  display: inline-block;
+  margin: 135px 0px 0px 0px;
+}
+.trial_subscription_wrap .subscription h1 {
+  width: 105%;
+  font-family: "GothamProBlack";
+  text-transform: uppercase;
+  color: #fff;
+}
+.trial_subscription_wrap .sub_content {
+  width: 105%;
+  display: inline-block;
+  float: none;
+}
+.trial_subscription_wrap .sub_content p {
+  font-family: "GothamProLight";
+  color: #fff;
+  margin-top: 20px;
+}
+.trial_subscription_wrap .sub_content p span {
+  font-family: "GothamProMedium";
+}
+.trial_subscription_wrap .entry_wrap {
+  width: 75%;
+  display: inline-block;
+  float: none;
+  margin: 55px 0px 135px 0px;
+  text-align: center;
+}
+.trial_subscription_wrap .entry_wrap a {
+  width: 320px;
+  display: block;
+  background-color: #aac65a;
+  color: #fff;
+  font-family: "GothamProMedium";
+  line-height: 3.125rem;
+  border: none;
+  border-radius: 22px;
+}
+.trial_subscription_wrap .entry_wrap a:hover {
+  text-decoration: none;
+}
+
+.bell_wrap img {
+  margin: 100px 0px 0px 30px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx  ОТЗЫВ КЛИЕНТА   xxxxxxxxxxxxxxxxxxxxxxx*/
+.client_review_wrap {
+  width: 100%;
+  position: relative;
+}
+.client_review_wrap .client_review {
+  margin-top: 80px;
+}
+.client_review_wrap .client_review h4 {
+  font-family: "GothamProRegular";
+  text-transform: uppercase;
+  line-height: 4rem;
+  color: #8a8e99;
+}
+.client_review_wrap .client_review h3 {
+  font-family: "GothamProBlack";
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #3b3e47;
+  margin-bottom: 25px;
+}
+.client_review_wrap .client_review p {
+  width: 100%;
+  font-family: "GothamProRegular";
+  color: #575b66;
+}
+.client_review_wrap .pictures {
+  margin: 55px 0px;
+}
+.client_review_wrap .pictures a {
+  margin-right: 25px;
+  display: inline-block;
+  z-index: 10;
+  outline: none;
+}
+.client_review_wrap .pictures a img {
+  width: 120px;
+}
+.client_review_wrap .pictures a .pic {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin-top: -120px;
+  z-index: 20;
+}
+.client_review_wrap .pictures a .pic:hover {
+  background: url(../img/cursor.png) no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center center;
+}
+
+.client_photo {
+  margin-top: 120px;
+}
+
+.photo_trainings {
+  margin: 95px 0px 65px;
+}
+.photo_trainings h3 {
+  font-family: "GothamProBlack";
+  color: #3b3e47;
+  text-align: center;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ФОТО С ТРЕНИРОВКИ   xxxxxxxxxxxxxxxxxxxxxxx*/
+.img-trainings {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.img-trainings a {
+  outline: none;
+}
+.img-trainings img {
+  width: 220px;
+  height: 150px;
+  margin: 10px 6px 10px 6px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ГУГЛ КАРТА   xxxxxxxxxxxxxxxxxxxxxxx*/
+.adress {
+  display: block;
+  text-align: center;
+}
+.adress h3 {
+  font-family: "GothamProBlack";
+  line-height: 40px;
+  color: #3b3e47;
+  text-transform: uppercase;
+  margin: 90px 0px 20px;
+}
+.adress p {
+  font-family: "GothamProRegular";
+  color: #9a9da3;
+}
+
+.main_maps {
+  max-width: 1920px;
+}
+.main_maps .map-responsive {
+  overflow: hidden;
+  padding-bottom: 36%;
+  position: relative;
+  height: 0;
+}
+.main_maps .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 700px;
+  width: 100%;
+  position: absolute;
+}
+
+.footer_content {
+  margin-top: 140px;
+}
+.footer_content h1 {
+  font-family: "GothamProBlack";
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer_content p {
+  font-family: "GothamProLight";
+  color: #fff;
+  margin-top: 20px;
+}
+.footer_content .footer_button {
+  margin-top: 50px;
+}
+.footer_content .footer_button a {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  text-align: center;
+  font-family: "GothamProMedium";
+  font-size: 16px;
+  line-height: 50px;
+  outline: none;
+  text-decoration: none;
+}
+.footer_content .footer_button a:hover {
+  background-color: #aac65a;
+  color: #fff;
+  border: 1px solid #aac65a;
+}
+.footer_content .footer_button .ghost-button-enroll {
+  width: 329px;
+  margin-right: 15px;
+}
+.footer_content .footer_button .ghost-button_entry {
+  width: 270px;
+}
+
+.santa_wrap {
+  width: 100%;
+  margin: 95px 20px 90px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   АДАПТИВ   xxxxxxxxxxxxxxxxxxxxxxx*/
+@media (max-width: 1199.99px) {
+  .replica {
+    margin: 30px 0px;
+    color: #fff;
+  }
+  .replica h1 {
+    font-size: 2.3rem;
+  }
+  .replica p {
+    font-size: 0.9rem;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+  .content .bg_wrap img {
+    width: 250px;
+    height: 365px;
+    margin-top: 40px;
+  }
+  .content .wrap_text h4 {
+    font-size: 0.9rem;
+  }
+  .content .wrap_text p {
+    font-size: 0.8rem;
+  }
+
+  .trainer_content {
+    width: 100%;
+    position: relative;
+  }
+  .trainer_content .content_responsive h4 {
+    font-size: 1.1rem;
+  }
+  .trainer_content .content_responsive h3 {
+    font-size: 2rem;
+  }
+  .trainer_content .content_responsive p {
+    font-size: 0.9rem;
+  }
+  .trainer_content .text_responsive p {
+    font-size: 0.9rem;
+  }
+  .trainer_content .text_too_responsive p {
+    font-size: 0.9rem;
+  }
+
+  .trainer_photo {
+    margin-top: 237px;
+  }
+
+  .schedule_wrap .wrap_caption h3 {
+    font-size: 2rem;
+  }
+
+  .new_year_wrap .caption h2 {
+    font-size: 3rem;
+  }
+
+  .motivation_wrap .wrap_caption h3 {
+    font-size: 2rem;
+  }
+  .motivation_wrap .motiv_client h4 {
+    font-size: 1rem;
+  }
+  .motivation_wrap .motiv_client p {
+    font-size: 0.9rem;
+  }
+
+  .trial_subscription_wrap .subscription h1 {
+    font-size: 2.5rem;
+  }
+  .trial_subscription_wrap .sub_content p {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+  .trial_subscription_wrap .entry_wrap {
+    width: 75%;
+    margin: 55px 0px 135px 0px;
+    text-align: center;
+  }
+
+  .bell_wrap {
+    width: 115%;
+  }
+
+  .client_review_wrap .client_review {
+    margin: 80px 0px 0px 25px;
+  }
+  .client_review_wrap .client_review h4 {
+    line-height: 2rem;
+  }
+  .client_review_wrap .client_review h3 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .client_review_wrap .client_review p {
+    width: 95%;
+    font-size: 1rem;
+  }
+  .client_review_wrap .pictures {
+    text-align: center;
+    margin: 55px 0px;
+  }
+  .client_review_wrap .pictures a {
+    display: inline-block;
+    outline: none;
+  }
+
+  .client_photo {
+    margin-top: 130px;
+    width: 120%;
+  }
+
+  .photo_trainings h3 {
+    font-size: 2rem;
+  }
+
+  .img-trainings img {
+    width: 184px;
+  }
+
+  .adress h3 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin: 90px 0px 20px;
+  }
+  .adress p {
+    font-size: 16px;
+  }
+
+  .footer_content {
+    margin-top: 140px;
+  }
+  .footer_content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  .footer_content p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  .footer_content .footer_button {
+    margin-top: 50px;
+  }
+  .footer_content .footer_button a {
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .footer_content .footer_button .ghost-button-enroll {
+    width: 300px;
+    margin-right: 15px;
+  }
+  .footer_content .footer_button .ghost-button_entry {
+    width: 240px;
+  }
+
+  .santa_wrap {
+    width: 110%;
+    margin: 95px 20px 90px;
+  }
+}
+@media (max-width: 991.99px) {
+  nav {
+    display: flex;
+  }
+  nav ul.nav-justified {
+    flex-wrap: wrap;
+  }
+  nav ul.nav-justified .move_left {
+    margin-left: 0px;
+  }
+  nav ul.nav-justified .move_right {
+    margin-right: 0px;
+  }
+  nav ul.nav-justified li.part {
+    white-space: nowrap;
+    margin: 10px 20px;
+  }
+
+  .replica h1 {
+    font-size: 1.7rem;
+  }
+  .replica p {
+    font-size: 0.7rem;
+  }
+
+  .bt_wrap .ghost-button-rounded-corners {
+    width: 245px;
+  }
+
+  .content h3 {
+    font-size: 1.8rem;
+  }
+  .content .bg_wrap img {
+    height: 335px;
+  }
+  .content .wrap_top {
+    width: 97%;
+    margin: 45px 0px 60px 0px;
+  }
+  .content .wrap_text {
+    margin-bottom: 30px;
+  }
+  .content .wrap_text h4 {
+    font-size: 0.8rem;
+  }
+  .content .wrap_text p {
+    font-size: 0.7rem;
+  }
+
+  .trainer_content {
+    position: relative;
+  }
+  .trainer_content .content_responsive h4 {
+    font-size: 0.9rem;
+  }
+  .trainer_content .content_responsive h3 {
+    font-size: 1.8rem;
+    line-height: 45px;
+  }
+  .trainer_content .content_responsive p {
+    font-size: 0.9rem;
+    margin: 0px;
+  }
+  .trainer_content .text_responsive {
+    display: none;
+  }
+  .trainer_content .text_too_responsive {
+    display: none;
+  }
+
+  .trainer_txt {
+    margin: 20px 0px;
+  }
+  .trainer_txt p {
+    width: 102%;
+    font-family: "GothamProRegular";
+    color: #575b66;
+    font-size: 0.9rem;
+  }
+
+  .trainer_txt_three {
+    margin: 20px 0px;
+  }
+  .trainer_txt_three p {
+    width: 102%;
+    font-family: "GothamProRegular";
+    color: #575b66;
+    font-size: 0.9rem;
+  }
+
+  .trainer_photo {
+    margin-top: 0px;
+  }
+
+  .subscription_wrap .subscrip_two {
+    margin-left: 40px;
+  }
+  .subscription_wrap .subscrip_three {
+    margin-top: 40px;
+  }
+
+  .schedule_wrap .wrap_caption h3 {
+    font-size: 1.8rem;
+  }
+
+  .motivation_wrap .wrap_caption h3 {
+    font-size: 1.8rem;
+  }
+  .motivation_wrap .motiv_client h4 {
+    font-size: 0.8rem;
+  }
+  .motivation_wrap .motiv_client p {
+    font-size: 0.7rem;
+  }
+
+  .trial_subscription_wrap .subscription {
+    margin: 100px 0px 0px 0px;
+  }
+  .trial_subscription_wrap .subscription h1 {
+    font-size: 2rem;
+  }
+  .trial_subscription_wrap .sub_content p {
+    width: 92%;
+    font-size: 0.9rem;
+  }
+  .trial_subscription_wrap .entry_wrap {
+    margin: 35px 0px 100px 0px;
+    text-align: center;
+  }
+
+  .bell_wrap {
+    width: 100%;
+  }
+  .bell_wrap img {
+    margin: 75px 0px 0px 0px;
+  }
+
+  .client_caption {
+    margin: 80px 0px 0px 20px;
+  }
+  .client_caption h4 {
+    font-family: "GothamProRegular";
+    text-transform: uppercase;
+    color: #8a8e99;
+    line-height: 2rem;
+  }
+  .client_caption h3 {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-family: "GothamProBlack";
+    color: #3b3e47;
+  }
+
+  .client_review_wrap .client_review {
+    margin: 15px 0px 0px 40px;
+  }
+  .client_review_wrap .client_review h4 {
+    line-height: 2rem;
+  }
+  .client_review_wrap .client_review h3 {
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .client_review_wrap .client_review p {
+    width: 92.5%;
+    font-size: 0.85rem;
+  }
+  .client_review_wrap .client_review .client_content {
+    display: none;
+  }
+  .client_review_wrap .pictures {
+    margin: 20px 0px;
+  }
+  .client_review_wrap .pictures a {
+    margin: 10px;
+  }
+  .client_review_wrap .pictures a img {
+    width: 80px;
+  }
+  .client_review_wrap .pictures a .pic {
+    width: 80px;
+    height: 80px;
+    margin-top: -80px;
+  }
+
+  .client_photo {
+    margin-top: 15px;
+  }
+
+  .photo_trainings {
+    margin: 55px 0px 45px;
+  }
+  .photo_trainings h3 {
+    font-size: 1.7rem;
+  }
+
+  .img-trainings {
+    margin-bottom: 90px;
+  }
+  .img-trainings img {
+    width: 164px;
+    margin: 10px 6px 10px 6px;
+  }
+
+  .adress h3 {
+    font-size: 1.9rem;
+    margin: 60px 0px 20px;
+  }
+  .adress p {
+    font-size: 0.9rem;
+  }
+
+  .footer_content {
+    margin-top: 90px;
+  }
+  .footer_content h1 {
+    font-size: 1.9rem;
+  }
+  .footer_content p {
+    font-size: 0.8rem;
+  }
+  .footer_content .footer_button {
+    margin-top: 40px;
+  }
+  .footer_content .footer_button a {
+    font-size: 0.8rem;
+    line-height: 40px;
+  }
+  .footer_content .footer_button .ghost-button-enroll {
+    width: 220px;
+    margin-right: 15px;
+  }
+  .footer_content .footer_button .ghost-button_entry {
+    width: 170px;
+  }
+
+  .santa_wrap {
+    width: 100%;
+    margin: 50px 20px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .replica h1 {
+    font-size: 1.5rem;
+  }
+  .replica p {
+    font-size: 0.6rem;
+  }
+
+  .bt_wrap .ghost-button-rounded-corners {
+    width: 215px;
+    font-size: 0.9rem;
+    line-height: 40px;
+  }
+
+  .content h3 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .content .bg_wrap img {
+    height: 302px;
+    margin-top: 13px;
+  }
+  .content .wrap_top {
+    margin: 15px 0px 15px 0px;
+  }
+  .content .wrap_text h4 {
+    font-size: 0.7rem;
+  }
+  .content .wrap_text p {
+    font-size: 0.57rem;
+  }
+
+  .trainer_content .content_responsive h3 {
+    font-size: 1.6rem;
+    line-height: 40px;
+  }
+  .trainer_content .content_responsive p {
+    font-size: 0.8rem;
+  }
+
+  .trainer_txt p {
+    font-size: 0.8rem;
+  }
+
+  .trainer_txt_three_too p {
+    width: 87%;
+    font-size: 0.8rem;
+  }
+
+  .trainer_txt_three {
+    display: none;
+  }
+
+  .trainer_txt_three_too p {
+    font-size: 0.8rem;
+    font-family: "GothamProRegular";
+    color: #575b66;
+  }
+
+  .subscription_wrap {
+    text-align: center;
+  }
+  .subscription_wrap .subscrip_two {
+    margin: 15px 0px 20px 0px;
+  }
+  .subscription_wrap .tab-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  .subscription_wrap .subscrip_one,
+  .subscription_wrap .subscrip_two,
+  .subscription_wrap .subscrip_three {
+    display: inline-block;
+    width: 220px;
+    margin: 40px 20px;
+  }
+  .subscription_wrap .subscrip_one .candy_wrap,
+  .subscription_wrap .subscrip_one .amulet_wrap,
+  .subscription_wrap .subscrip_one .gift_wrap,
+  .subscription_wrap .subscrip_two .candy_wrap,
+  .subscription_wrap .subscrip_two .amulet_wrap,
+  .subscription_wrap .subscrip_two .gift_wrap,
+  .subscription_wrap .subscrip_three .candy_wrap,
+  .subscription_wrap .subscrip_three .amulet_wrap,
+  .subscription_wrap .subscrip_three .gift_wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin: -24px -14px;
+  }
+  .subscription_wrap .subscrip_one h5,
+  .subscription_wrap .subscrip_two h5,
+  .subscription_wrap .subscrip_three h5 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .subscription_wrap .subscrip_one .price,
+  .subscription_wrap .subscrip_two .price,
+  .subscription_wrap .subscrip_three .price {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-top: 20px;
+  }
+  .subscription_wrap .gift_massage_gray,
+  .subscription_wrap .gift_massage_yellow,
+  .subscription_wrap .gift_massage_red {
+    text-align: center;
+    position: relative;
+    width: 107%;
+    margin: 20px -30px 50px -10px;
+  }
+  .subscription_wrap .gift_massage_gray img,
+  .subscription_wrap .gift_massage_yellow img,
+  .subscription_wrap .gift_massage_red img {
+    width: 102%;
+  }
+  .subscription_wrap .gift_massage_gray p,
+  .subscription_wrap .gift_massage_yellow p,
+  .subscription_wrap .gift_massage_red p {
+    font-size: 0.9rem;
+    line-height: 3.125rem;
+    padding-top: 5px;
+  }
+  .subscription_wrap .gift_massage_red {
+    width: 110%;
+  }
+  .subscription_wrap .button_wrap_green {
+    position: absolute;
+  }
+  .subscription_wrap .button_wrap_green .select_button {
+    font-size: 0.9rem;
+    line-height: 3.125rem;
+    width: 155px;
+    margin: -25px 0px 0px 32px;
+  }
+
+  .schedule_wrap .wrap_caption h3 {
+    font-size: 1.6rem;
+  }
+
+  .new_year_wrap .caption h2 {
+    font-size: 2.5rem;
+  }
+
+  .motivation_wrap .wrap_caption h3 {
+    font-size: 1.6rem;
+  }
+
+  .trial_subscription_wrap .subscription h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .trial_subscription_wrap .sub_content {
+    width: 104%;
+  }
+  .trial_subscription_wrap .sub_content p {
+    font-size: 0.6rem;
+  }
+  .trial_subscription_wrap .entry_wrap {
+    width: 75%;
+    margin: 15px 0px 95px 0px;
+    text-align: center;
+  }
+  .trial_subscription_wrap .entry_wrap a {
+    width: 220px;
+    font-size: 0.7rem;
+    line-height: 2.125rem;
+  }
+
+  .bell_wrap {
+    width: 100%;
+  }
+
+  .client_caption {
+    margin: 50px 0px 0px 20px;
+    width: 82%;
+  }
+  .client_caption h4 {
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  .client_caption h3 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .client_review_wrap .client_review {
+    margin: 15px 0px 0px 15px;
+  }
+  .client_review_wrap .client_review p {
+    width: 100%;
+    font-size: 0.65rem;
+  }
+  .client_review_wrap .pictures {
+    margin: 25px 0px 10px 0px;
+  }
+  .client_review_wrap .pictures a {
+    margin-right: 10px;
+  }
+  .client_review_wrap .pictures a img {
+    width: 70px;
+  }
+  .client_review_wrap .pictures a img .pic {
+    width: 85px;
+    height: 85px;
+    margin-top: -185px;
+  }
+
+  .client_photo {
+    margin: 15px 0px 0px 15px;
+  }
+
+  .photo_trainings {
+    margin: 40px 0px 30px;
+  }
+  .photo_trainings h3 {
+    font-size: 1.6rem;
+  }
+
+  .img-trainings {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .img-trainings img {
+    width: 220px;
+    margin: 10px 6px 10px 6px;
+  }
+
+  .adress h3 {
+    font-size: 1.8rem;
+    margin: 50px 0px 20px;
+  }
+  .adress p {
+    font-size: 0.8rem;
+  }
+
+  .footer_content {
+    margin-top: 90px;
+  }
+  .footer_content h1 {
+    font-size: 1.4rem;
+  }
+  .footer_content p {
+    font-size: 0.7rem;
+  }
+  .footer_content .footer_button {
+    margin-top: 35px;
+  }
+  .footer_content .footer_button a {
+    font-size: 0.7rem;
+    line-height: 30px;
+  }
+  .footer_content .footer_button .ghost-button-enroll {
+    width: 180px;
+    margin-right: 15px;
+  }
+  .footer_content .footer_button .ghost-button_entry {
+    width: 140px;
+  }
+
+  .santa_wrap {
+    width: 110%;
+    margin: 45px 0px 50px;
+  }
+}
+@media (max-width: 575.99px) {
+  nav ul.nav-justified li .shift {
+    padding-left: 0px;
+  }
+
+  .logo img {
+    margin: -25px 0px 0px -25px;
+  }
+
+  .replica h1 {
+    font-size: 1.4rem;
+  }
+  .replica p {
+    font-size: 0.5rem;
+  }
+
+  .bt_wrap .ghost-button-rounded-corners {
+    width: 200px;
+  }
+
+  .content h3 {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .content .bg_wrap img {
+    width: 300px;
+    height: 440px;
+    margin-top: 130px;
+  }
+  .content .wrap_top {
+    margin: 15px 0px 15px 0px;
+  }
+  .content .wrap_text h4 {
+    font-size: 0.9rem;
+  }
+  .content .wrap_text p {
+    font-size: 0.8rem;
+  }
+
+  .trainer_content {
+    margin-top: -40px;
+  }
+  .trainer_content .content_responsive {
+    margin: 10px 20px;
+  }
+  .trainer_content .content_responsive h3 {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+  .trainer_content .content_responsive h4 {
+    font-size: 0.8rem;
+  }
+
+  .trainer_txt {
+    margin: 10px 20px;
+  }
+
+  .trainer_txt_three_too {
+    margin: 10px 20px 30px;
+  }
+  .trainer_txt_three_too p {
+    width: 100%;
+  }
+
+  .new_year_wrap .button_wrap {
+    margin: 35px 0px 0px;
+  }
+
+  .subscription_wrap .subscrip_one,
+  .subscription_wrap .subscrip_two {
+    margin: 40px 15px 15px;
+  }
+
+  .schedule_wrap .wrap_caption h3 {
+    font-size: 1.4rem;
+  }
+
+  .new_year_wrap .caption h2 {
+    font-size: 2rem;
+  }
+
+  .motivation_wrap .wrap_caption h3 {
+    font-size: 1.4rem;
+  }
+
+  .trial_subscription_wrap .subscription {
+    margin: 60px 0px 0px 15px;
+  }
+  .trial_subscription_wrap .subscription h1 {
+    font-size: 1.1rem;
+  }
+  .trial_subscription_wrap .sub_content {
+    width: 95%;
+    margin: 0px 0px 0px 15px;
+  }
+  .trial_subscription_wrap .sub_content p {
+    margin: 5px 0px;
+    font-size: 0.6rem;
+  }
+  .trial_subscription_wrap .entry_wrap {
+    margin: 15px 0px 70px 15px;
+    text-align: center;
+  }
+  .trial_subscription_wrap .entry_wrap a {
+    width: 155px;
+    font-size: 0.6rem;
+    line-height: 2rem;
+  }
+
+  .bell_wrap {
+    width: 95%;
+  }
+  .bell_wrap img {
+    margin: 40px 0px 0px -15px;
+  }
+
+  .client_photo {
+    display: none;
+  }
+
+  .client_caption {
+    margin: 50px 0px 0px 15px;
+  }
+
+  .client_review_wrap .client_review {
+    margin: 10px 0px 0px 15px;
+  }
+  .client_review_wrap .client_review h4 {
+    line-height: 2rem;
+  }
+  .client_review_wrap .client_review h3 {
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .client_review_wrap .client_review p {
+    width: 92.5%;
+    font-size: 0.85rem;
+  }
+  .client_review_wrap .client_review .client_content {
+    display: none;
+  }
+  .client_review_wrap .pictures {
+    margin: 20px 0px;
+  }
+  .client_review_wrap .pictures a {
+    margin: 10px;
+  }
+  .client_review_wrap .pictures a img {
+    width: 80px;
+  }
+  .client_review_wrap .pictures a .pic {
+    width: 80px;
+    height: 80px;
+    margin-top: -80px;
+  }
+
+  .photo_trainings {
+    margin: 30px 0px 20px;
+  }
+  .photo_trainings h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-trainings {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .img-trainings img {
+    width: 180px;
+    margin: 10px 6px 10px 6px;
+  }
+
+  .adress h3 {
+    font-size: 1.4rem;
+    margin: 30px 0px 10px;
+  }
+  .adress p {
+    font-size: 0.7rem;
+  }
+
+  .footer_content {
+    margin: 50px 0px 0px 15px;
+  }
+  .footer_content h1 {
+    font-size: 1.2rem;
+  }
+  .footer_content p {
+    font-size: 0.6rem;
+  }
+  .footer_content .footer_button {
+    margin-top: 30px;
+  }
+  .footer_content .footer_button a {
+    font-size: 0.5rem;
+    line-height: 30px;
+  }
+  .footer_content .footer_button .ghost-button-enroll {
+    width: 130px;
+  }
+  .footer_content .footer_button .ghost-button_entry {
+    width: 110px;
+  }
+
+  .santa_wrap {
+    width: 100%;
+    margin: 25px 0px 30px;
+  }
+}
+@media (max-width: 479px) {
+  .hidden-up {
+    display: none !important;
+  }
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ПОКУПКА АБОНЕМЕНТЕ ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+@media (min-width: 200px) {
+  .modal-lg {
+    max-width: 450px;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    border: none;
+  }
+
+  .subscription_payment {
+    width: 100%;
+  }
+  .subscription_payment .payment_left {
+    width: 100%;
+    background: url(../img/bg-red.png);
+    border-radius: 15px 15px 0px 0px;
+  }
+  .subscription_payment .payment_left .subscrip_one,
+  .subscription_payment .payment_left .subscrip_two,
+  .subscription_payment .payment_left .subscrip_three {
+    margin: 60px 0px 60px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_yellow,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_yellow {
+    margin: 45px -2px 20px -10px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_one .gift_massage_yellow p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_yellow p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_yellow p {
+    line-height: 2.5rem;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_red,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_red,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_red {
+    margin: 45px -2px 20px -17px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_red p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_red p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_red p {
+    line-height: 2.5rem;
+  }
+  .subscription_payment .payment_rigth {
+    width: 100%;
+  }
+  .subscription_payment .payment_rigth .close {
+    width: 20px;
+    padding: 0px;
+    margin: -45px 10px;
+  }
+  .subscription_payment .payment_rigth .close span {
+    color: #c2c4cc;
+    width: 20px;
+    height: 20px;
+    margin: 3px -10px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "GothamProRegular";
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+  }
+  .subscription_payment .payment_rigth .payment_content {
+    margin: 50px 55px;
+    text-align: justify;
+  }
+  .subscription_payment .payment_rigth .payment_content p {
+    font-family: "GothamProRegular";
+    color: #575b66;
+    line-height: 24px;
+  }
+  .subscription_payment .payment_rigth .payment_content p span {
+    color: #3b3e47;
+    font-family: "GothamProMedium";
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of {
+    text-align: center;
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of p {
+    color: #c2c4cc;
+    font-family: "GothamProMedium";
+    text-transform: uppercase;
+    margin: 15px 10px 10px 0px;
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of img {
+    margin: 0px 10px;
+  }
+  .subscription_payment .payment_rigth .payment_content .application_wrap {
+    text-align: center;
+  }
+  .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
+    width: 75.5%;
+    margin: 35px 0px 40px 0px;
+    background-color: #aac65a;
+    color: #fff;
+    font-family: "GothamProRegular";
+    line-height: 3.125rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   THE-END ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+@media (min-width: 320px) and (max-width: 479px) {
+  .trial_subscription_wrap .subscription {
+    margin: 40px 0px 0px 0px;
+  }
+  .trial_subscription_wrap .subscription h1 {
+    font-size: 1.1rem;
+  }
+  .trial_subscription_wrap .sub_content {
+    width: 95%;
+    margin: 0px;
+  }
+  .trial_subscription_wrap .sub_content p {
+    font-size: 0.6rem;
+  }
+  .trial_subscription_wrap .entry_wrap {
+    margin: 15px 0px 70px 15px;
+    text-align: center;
+  }
+  .trial_subscription_wrap .entry_wrap a {
+    width: 180px;
+    font-size: 0.6rem;
+    line-height: 2rem;
+  }
+
+  .bell_wrap {
+    display: none;
+  }
+
+  .new_year_wrap .button_wrap {
+    /*xxxxxxxxxxxxxxxxxxxxxxxxx  ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
+    /*xxxxxxxxxxxxxxxxxxxxxxxxx  THE_END ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) and (min-width: 200px) {
+  .new_year_wrap .button_wrap .modal-dialog {
+    max-width: 300px;
+    margin: 3.5rem auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .new_year_wrap .button_wrap .modal-content {
+    border-radius: 20px;
+    border: none;
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top {
+    text-align: center;
+    margin: 0px 20px;
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top p {
+    margin-top: 55px;
+    color: #575b66;
+    line-height: 24px;
+    font-family: "GothamProRegular";
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top .close {
+    width: 20px;
+    padding: 0px;
+    margin: 3px 35px;
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top .close span {
+    color: #c2c4cc;
+    width: 20px;
+    height: 20px;
+    margin: 3px 35px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "GothamProRegular";
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+  }
+  .new_year_wrap .button_wrap .modal-content .form-group {
+    margin: 0px 20px;
+    color: #575b66;
+  }
+  .new_year_wrap .button_wrap .modal-content .form-group .form-control {
+    margin: 10px 5px;
+    padding: .4rem 1.5rem;
+    width: 96.5%;
+    border: 1px solid #d9dade;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #575b66;
+  }
+  .new_year_wrap .button_wrap .modal-content .form-group .form-control:focus {
+    box-shadow: none;
+  }
+  .new_year_wrap .button_wrap .modal-content .application_wrap {
+    margin: 0px 20px;
+  }
+  .new_year_wrap .button_wrap .modal-content .application_wrap .application_button {
+    width: 96.5%;
+    margin: 15px 0px 60px 0px;
+    background-color: #aac65a;
+    color: #fff;
+    font-family: "GothamProRegular";
+    line-height: 3.125rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   ПОКУПКА АБОНЕМЕНТЕ ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+@media (min-width: 200px) {
+  .modal-lg {
+    max-width: 550px;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    border: none;
+  }
+
+  .subscription_payment {
+    width: 100%;
+  }
+  .subscription_payment .payment_left {
+    width: 100%;
+    background: url(../img/bg-red.png);
+    border-radius: 15px 15px 0px 0px;
+  }
+  .subscription_payment .payment_left .subscrip_one,
+  .subscription_payment .payment_left .subscrip_two,
+  .subscription_payment .payment_left .subscrip_three {
+    margin: 60px 0px 60px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_yellow,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_yellow {
+    margin: 45px -2px 20px -10px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_one .gift_massage_yellow p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_yellow p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_yellow p {
+    line-height: 2.5rem;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_red,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_red,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_red {
+    margin: 45px -2px 20px -17px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_red p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_red p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_red p {
+    line-height: 2.5rem;
+  }
+  .subscription_payment .payment_rigth {
+    width: 100%;
+  }
+  .subscription_payment .payment_rigth .close {
+    width: 20px;
+    padding: 0px;
+    margin: -40px 10px;
+  }
+  .subscription_payment .payment_rigth .close span {
+    color: #c2c4cc;
+    width: 20px;
+    height: 20px;
+    margin: 3px -10px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "GothamProRegular";
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+  }
+  .subscription_payment .payment_rigth .payment_content {
+    margin: 40px 25px;
+    text-align: justify;
+  }
+  .subscription_payment .payment_rigth .payment_content p {
+    font-family: "GothamProRegular";
+    color: #575b66;
+    line-height: 24px;
+  }
+  .subscription_payment .payment_rigth .payment_content p span {
+    color: #3b3e47;
+    font-family: "GothamProMedium";
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of {
+    text-align: center;
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of p {
+    color: #c2c4cc;
+    font-family: "GothamProMedium";
+    text-transform: uppercase;
+    margin: 15px 10px 10px 0px;
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of img {
+    margin: 0px 10px;
+  }
+  .subscription_payment .payment_rigth .payment_content .application_wrap {
+    text-align: center;
+  }
+  .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
+    width: 75.5%;
+    margin: 35px 0px 40px 0px;
+    background-color: #aac65a;
+    color: #fff;
+    font-family: "GothamProRegular";
+    line-height: 3.125rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxx   THE-END ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+@media (min-width: 0px) and (max-width: 320px) {
+  .client_review_wrap .pictures a {
+    margin: 5px;
+  }
+  .client_review_wrap .pictures a img {
+    width: 85px;
+  }
+  .client_review_wrap .pictures a img .pic {
+    width: 85px;
+    height: 85px;
+    margin-top: -85px;
+    z-index: 20;
+  }
+
+  .new_year_wrap .button_wrap {
+    /*xxxxxxxxxxxxxxxxxxxxxxxxx  ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
+    /*xxxxxxxxxxxxxxxxxxxxxxxxx  THE_END ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) and (min-width: 200px) {
+  .new_year_wrap .button_wrap .modal-dialog {
+    max-width: 300px;
+    margin: 3.5rem auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .new_year_wrap .button_wrap .modal-content {
+    border-radius: 20px;
+    border: none;
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top {
+    text-align: center;
+    margin: 0px 20px;
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top p {
+    margin-top: 55px;
+    color: #575b66;
+    line-height: 24px;
+    font-family: "GothamProRegular";
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top .close {
+    width: 20px;
+    padding: 0px;
+    margin: 3px 35px;
+  }
+  .new_year_wrap .button_wrap .modal-content .modal-top .close span {
+    color: #c2c4cc;
+    width: 20px;
+    height: 20px;
+    margin: 3px 35px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "GothamProRegular";
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+  }
+  .new_year_wrap .button_wrap .modal-content .form-group {
+    margin: 0px 20px;
+    color: #575b66;
+  }
+  .new_year_wrap .button_wrap .modal-content .form-group .form-control {
+    margin: 10px 5px;
+    padding: .4rem 1.5rem;
+    width: 96.5%;
+    border: 1px solid #d9dade;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #575b66;
+  }
+  .new_year_wrap .button_wrap .modal-content .form-group .form-control:focus {
+    box-shadow: none;
+  }
+  .new_year_wrap .button_wrap .modal-content .application_wrap {
+    margin: 0px 20px;
+  }
+  .new_year_wrap .button_wrap .modal-content .application_wrap .application_button {
+    width: 96.5%;
+    margin: 15px 0px 60px 0px;
+    background-color: #aac65a;
+    color: #fff;
+    font-family: "GothamProRegular";
+    line-height: 3.125rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+
+  /*xxxxxxxxxxxxxxxxxxxxxxxxx   ПОКУПКА АБОНЕМЕНТЕ ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+}
+@media (min-width: 0px) and (max-width: 320px) and (min-width: 200px) {
+  .modal-lg {
+    max-width: 550px;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    border: none;
+  }
+
+  .subscription_payment {
+    width: 100%;
+  }
+  .subscription_payment .payment_left {
+    width: 100%;
+    background: url(../img/bg-red.png);
+    border-radius: 15px 15px 0px 0px;
+  }
+  .subscription_payment .payment_left .subscrip_one,
+  .subscription_payment .payment_left .subscrip_two,
+  .subscription_payment .payment_left .subscrip_three {
+    margin: 60px 0px 60px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_yellow,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_gray,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_yellow {
+    margin: 45px -2px 20px -10px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_one .gift_massage_yellow p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_yellow p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_gray p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_yellow p {
+    line-height: 2.5rem;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_red,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_red,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_red {
+    margin: 45px -2px 20px -17px;
+  }
+  .subscription_payment .payment_left .subscrip_one .gift_massage_red p,
+  .subscription_payment .payment_left .subscrip_two .gift_massage_red p,
+  .subscription_payment .payment_left .subscrip_three .gift_massage_red p {
+    line-height: 2.5rem;
+  }
+  .subscription_payment .payment_rigth {
+    width: 100%;
+  }
+  .subscription_payment .payment_rigth .close {
+    width: 20px;
+    padding: 0px;
+    margin: -40px 10px;
+  }
+  .subscription_payment .payment_rigth .close span {
+    color: #c2c4cc;
+    width: 20px;
+    height: 20px;
+    margin: 3px -10px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "GothamProRegular";
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+  }
+  .subscription_payment .payment_rigth .payment_content {
+    margin: 40px 25px;
+    text-align: justify;
+  }
+  .subscription_payment .payment_rigth .payment_content p {
+    font-family: "GothamProRegular";
+    color: #575b66;
+    line-height: 24px;
+  }
+  .subscription_payment .payment_rigth .payment_content p span {
+    color: #3b3e47;
+    font-family: "GothamProMedium";
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of {
+    text-align: center;
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of p {
+    color: #c2c4cc;
+    font-family: "GothamProMedium";
+    text-transform: uppercase;
+    margin: 15px 10px 10px 0px;
+  }
+  .subscription_payment .payment_rigth .payment_content .ways_of img {
+    margin: 0px 10px;
+  }
+  .subscription_payment .payment_rigth .payment_content .application_wrap {
+    text-align: center;
+  }
+  .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
+    width: 100%;
+    margin: 35px 0px 40px 0px;
+    background-color: #aac65a;
+    color: #fff;
+    font-family: "GothamProRegular";
+    line-height: 3.125rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  /*xxxxxxxxxxxxxxxxxxxxxxxxx   THE-END ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
+}
+
+/*# sourceMappingURL=style.css.map */
