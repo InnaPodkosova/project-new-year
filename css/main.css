@@ -79,6 +79,10 @@ p {
 }
 
 /* =16px */
+.navbar-dark .navbar-toggler {
+  outline: none;
+}
+
 .header,
 .main_red {
   max-width: 1920px;
@@ -147,11 +151,11 @@ nav ul.nav-justified li .shift {
 }
 .logo img {
   position: relative;
-  margin: -85px 0px 0px -20px;
+  margin: -30px 0 0 -20px;
 }
 
 .replica {
-  margin: 30px 0px;
+  margin: 30px 0;
   color: #fff;
 }
 .replica h1 {
@@ -222,7 +226,7 @@ nav ul.nav-justified li .shift {
   margin-top: 45px;
 }
 .content .wrap_top {
-  margin: 45px 0px 90px 0px;
+  margin: 45px 0 90px 0;
   width: 100%;
 }
 .content .wrap_text {
@@ -255,12 +259,12 @@ nav ul.nav-justified li .shift {
   color: #3b3e47;
 }
 .trainer_content .content_responsive p {
-  margin: 20px 0px;
+  margin: 20px 0;
   font-family: "GothamProRegular";
   color: #575b66;
 }
 .trainer_content .text_responsive p {
-  margin: 20px 0px;
+  margin: 20px 0;
   margin: 0;
   font-family: "GothamProRegular";
   color: #575b66;
@@ -310,7 +314,7 @@ nav ul.nav-justified li .shift {
 .new_year_wrap .button_wrap {
   width: 100%;
   display: block;
-  margin: 35px 0px;
+  margin: 35px 0;
   /*xxxxxxxxxxxxxxxxxxxxxxxxx  ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
 }
 .new_year_wrap .button_wrap .active {
@@ -350,7 +354,7 @@ nav ul.nav-justified li .shift {
 }
 .new_year_wrap .button_wrap .modal-content .modal-top {
   text-align: center;
-  margin: 0px 55px;
+  margin: 0 55px;
 }
 .new_year_wrap .button_wrap .modal-content .modal-top p {
   margin-top: 55px;
@@ -360,7 +364,7 @@ nav ul.nav-justified li .shift {
 }
 .new_year_wrap .button_wrap .modal-content .modal-top .close {
   width: 20px;
-  padding: 0px;
+  padding: 0;
 }
 .new_year_wrap .button_wrap .modal-content .modal-top .close span {
   color: #c2c4cc;
@@ -378,7 +382,7 @@ nav ul.nav-justified li .shift {
   /* Safari and Chrome */
 }
 .new_year_wrap .button_wrap .modal-content .form-group {
-  margin: 0px 55px;
+  margin: 0 55px;
   color: #575b66;
 }
 .new_year_wrap .button_wrap .modal-content .form-group .form-control {
@@ -395,11 +399,11 @@ nav ul.nav-justified li .shift {
   box-shadow: none;
 }
 .new_year_wrap .button_wrap .modal-content .application_wrap {
-  margin: 0px 55px;
+  margin: 0 55px;
 }
 .new_year_wrap .button_wrap .modal-content .application_wrap .application_button {
   width: 96.5%;
-  margin: 15px 0px 60px 0px;
+  margin: 15px 0 60px 0;
   background-color: #aac65a;
   color: #fff;
   font-family: "GothamProRegular";
@@ -484,7 +488,7 @@ nav ul.nav-justified li .shift {
 }
 .subscription_wrap .gift_massage_red {
   width: 113%;
-  margin: 45px 0px 50px -17px;
+  margin: 45px 0 50px -17px;
 }
 .subscription_wrap .gift_massage_red p {
   color: #fff;
@@ -516,17 +520,17 @@ nav ul.nav-justified li .shift {
   .subscription_wrap .subscription_payment {
     width: 100%;
     display: flex;
-    justify-content: flex-srart;
+    justify-content: flex-start;
   }
   .subscription_wrap .subscription_payment .payment_left {
     width: 42.5%;
     background: url(../img/bg-red.png);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
   }
   .subscription_wrap .subscription_payment .payment_left .subscrip_one,
 .subscription_wrap .subscription_payment .payment_left .subscrip_two,
 .subscription_wrap .subscription_payment .payment_left .subscrip_three {
-    margin: 90px 0px 90px;
+    margin: 90px 0 90px;
   }
   .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
 .subscription_wrap .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
@@ -592,13 +596,13 @@ nav ul.nav-justified li .shift {
   }
   .subscription_wrap .subscription_payment .payment_rigth .payment_content .ways_of {
     display: flex;
-    justify-content: flex-srart;
+    justify-content: flex-start;
   }
   .subscription_wrap .subscription_payment .payment_rigth .payment_content .ways_of p {
     color: #c2c4cc;
     font-family: "GothamProMedium";
     text-transform: uppercase;
-    margin: 15px 10px 10px 0px;
+    margin: 15px 10px 10px 0;
   }
   .subscription_wrap .subscription_payment .payment_rigth .payment_content .ways_of img {
     height: 35px;
@@ -606,7 +610,7 @@ nav ul.nav-justified li .shift {
   }
   .subscription_wrap .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
     width: 75.5%;
-    margin: 35px 0px 40px 0px;
+    margin: 35px 0 40px 0;
     background-color: #aac65a;
     color: #fff;
     font-family: "GothamProRegular";
@@ -657,7 +661,7 @@ nav ul.nav-justified li .shift {
 .motivation_wrap .motiv_client {
   width: 100%;
   display: block;
-  margin: 55px 0px 70px 0px;
+  margin: 55px 0 70px 0;
 }
 .motivation_wrap .motiv_client h4 {
   font-family: "GothamProMedium";
@@ -671,12 +675,21 @@ nav ul.nav-justified li .shift {
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxx   ЗАПИСАТСЯ НА ТРЕНИРОВКУ   xxxxxxxxxxxxxxxxxxxxxxx*/
+.write_wrap_block {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: start;
+}
+
 .trial_subscription_wrap {
-  display: block;
+  width: 70%;
+  display: inline-block;
 }
 .trial_subscription_wrap .subscription {
   display: inline-block;
-  margin: 135px 0px 0px 0px;
+  margin: 135px 0 0 0;
 }
 .trial_subscription_wrap .subscription h1 {
   width: 105%;
@@ -701,7 +714,7 @@ nav ul.nav-justified li .shift {
   width: 75%;
   display: inline-block;
   float: none;
-  margin: 55px 0px 135px 0px;
+  margin: 55px 0 135px 0;
   text-align: center;
 }
 .trial_subscription_wrap .entry_wrap a {
@@ -718,8 +731,12 @@ nav ul.nav-justified li .shift {
   text-decoration: none;
 }
 
+.bell_wrap {
+  display: inline-block;
+  width: 25%;
+}
 .bell_wrap img {
-  margin: 100px 0px 0px 30px;
+  margin: 75px 0 0 30px;
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxx  ОТЗЫВ КЛИЕНТА   xxxxxxxxxxxxxxxxxxxxxxx*/
@@ -788,7 +805,7 @@ nav ul.nav-justified li .shift {
 }
 
 .photo_trainings {
-  margin: 95px 0px 65px;
+  margin: 95px 0 65px;
 }
 .photo_trainings h3 {
   font-family: "GothamProBlack";
@@ -820,7 +837,7 @@ nav ul.nav-justified li .shift {
   line-height: 40px;
   color: #3b3e47;
   text-transform: uppercase;
-  margin: 90px 0px 20px;
+  margin: 90px 0 20px;
 }
 .adress p {
   font-family: "GothamProRegular";
@@ -845,6 +862,7 @@ nav ul.nav-justified li .shift {
 }
 
 .footer_content {
+  width: 70%;
   margin-top: 140px;
 }
 .footer_content h1 {
@@ -878,7 +896,7 @@ nav ul.nav-justified li .shift {
   border: 1px solid #aac65a;
 }
 .footer_content .footer_button .ghost-button-enroll {
-  width: 329px;
+  width: 320px;
   margin-right: 15px;
 }
 .footer_content .footer_button .ghost-button_entry {
@@ -886,8 +904,11 @@ nav ul.nav-justified li .shift {
 }
 
 .santa_wrap {
-  width: 100%;
+  width: 30%;
   margin: 95px 20px 90px;
+}
+.santa_wrap img {
+  width: 100%;
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxx   АДАПТИВ   xxxxxxxxxxxxxxxxxxxxxxx*/
@@ -969,16 +990,20 @@ nav ul.nav-justified li .shift {
   }
   .trial_subscription_wrap .entry_wrap {
     width: 75%;
-    margin: 55px 0px 135px 0px;
+    margin: 55px 0 135px 0;
     text-align: center;
   }
 
   .bell_wrap {
-    width: 115%;
+    width: 28%;
+  }
+  .bell_wrap img {
+    width: 100%;
+    margin: 120px 0 0 30px;
   }
 
   .client_review_wrap .client_review {
-    margin: 80px 0px 0px 25px;
+    margin: 80px 0 0 25px;
   }
   .client_review_wrap .client_review h4 {
     line-height: 2rem;
@@ -1009,13 +1034,14 @@ nav ul.nav-justified li .shift {
   .adress h3 {
     font-size: 2rem;
     line-height: 40px;
-    margin: 90px 0px 20px;
+    margin: 90px 0 20px;
   }
   .adress p {
     font-size: 16px;
   }
 
   .footer_content {
+    width: 70%;
     margin-top: 140px;
   }
   .footer_content h1 {
@@ -1034,15 +1060,15 @@ nav ul.nav-justified li .shift {
     line-height: 50px;
   }
   .footer_content .footer_button .ghost-button-enroll {
-    width: 300px;
+    width: 260px;
     margin-right: 15px;
   }
   .footer_content .footer_button .ghost-button_entry {
-    width: 240px;
+    width: 220px;
   }
 
   .santa_wrap {
-    width: 110%;
+    width: 30%;
     margin: 95px 20px 90px;
   }
 }
@@ -1054,10 +1080,10 @@ nav ul.nav-justified li .shift {
     flex-wrap: wrap;
   }
   nav ul.nav-justified .move_left {
-    margin-left: 0px;
+    margin-left: 0;
   }
   nav ul.nav-justified .move_right {
-    margin-right: 0px;
+    margin-right: 0;
   }
   nav ul.nav-justified li.part {
     white-space: nowrap;
@@ -1068,7 +1094,7 @@ nav ul.nav-justified li .shift {
     font-size: 1.7rem;
   }
   .replica p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .bt_wrap .ghost-button-rounded-corners {
@@ -1083,7 +1109,7 @@ nav ul.nav-justified li .shift {
   }
   .content .wrap_top {
     width: 97%;
-    margin: 45px 0px 60px 0px;
+    margin: 45px 0 60px 0;
   }
   .content .wrap_text {
     margin-bottom: 30px;
@@ -1107,7 +1133,7 @@ nav ul.nav-justified li .shift {
   }
   .trainer_content .content_responsive p {
     font-size: 0.9rem;
-    margin: 0px;
+    margin: 0;
   }
   .trainer_content .text_responsive {
     display: none;
@@ -1127,7 +1153,7 @@ nav ul.nav-justified li .shift {
   }
 
   .trainer_txt_three {
-    margin: 20px 0px;
+    margin: 20px 0;
   }
   .trainer_txt_three p {
     width: 102%;
@@ -1137,7 +1163,7 @@ nav ul.nav-justified li .shift {
   }
 
   .trainer_photo {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .subscription_wrap .subscrip_two {
@@ -1161,8 +1187,11 @@ nav ul.nav-justified li .shift {
     font-size: 0.7rem;
   }
 
+  .trial_subscription_wrap {
+    width: 70%;
+  }
   .trial_subscription_wrap .subscription {
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0 0 0;
   }
   .trial_subscription_wrap .subscription h1 {
     font-size: 2rem;
@@ -1172,19 +1201,23 @@ nav ul.nav-justified li .shift {
     font-size: 0.9rem;
   }
   .trial_subscription_wrap .entry_wrap {
-    margin: 35px 0px 100px 0px;
+    margin: 35px 0 100px 0;
     text-align: center;
+  }
+  .trial_subscription_wrap .entry_wrap a {
+    width: 280px;
+    line-height: 2.725rem;
   }
 
   .bell_wrap {
-    width: 100%;
+    width: 30%;
   }
   .bell_wrap img {
-    margin: 75px 0px 0px 0px;
+    margin: 55px 0 0 0;
   }
 
   .client_caption {
-    margin: 80px 0px 0px 20px;
+    margin: 80px 0 0 20px;
   }
   .client_caption h4 {
     font-family: "GothamProRegular";
@@ -1202,7 +1235,7 @@ nav ul.nav-justified li .shift {
   }
 
   .client_review_wrap .client_review {
-    margin: 15px 0px 0px 40px;
+    margin: 15px 0 0 40px;
   }
   .client_review_wrap .client_review h4 {
     line-height: 2rem;
@@ -1234,7 +1267,7 @@ nav ul.nav-justified li .shift {
   }
 
   .photo_trainings {
-    margin: 55px 0px 45px;
+    margin: 55px 0 45px;
   }
   .photo_trainings h3 {
     font-size: 1.7rem;
@@ -1250,14 +1283,15 @@ nav ul.nav-justified li .shift {
 
   .adress h3 {
     font-size: 1.9rem;
-    margin: 60px 0px 20px;
+    margin: 60px 0 20px;
   }
   .adress p {
     font-size: 0.9rem;
   }
 
   .footer_content {
-    margin-top: 90px;
+    width: 70%;
+    margin-top: 70px;
   }
   .footer_content h1 {
     font-size: 1.9rem;
@@ -1281,16 +1315,13 @@ nav ul.nav-justified li .shift {
   }
 
   .santa_wrap {
-    width: 100%;
+    width: 30%;
     margin: 50px 20px 50px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .replica h1 {
     font-size: 1.5rem;
-  }
-  .replica p {
-    font-size: 0.6rem;
   }
 
   .bt_wrap .ghost-button-rounded-corners {
@@ -1308,7 +1339,7 @@ nav ul.nav-justified li .shift {
     margin-top: 13px;
   }
   .content .wrap_top {
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0 15px 0;
   }
   .content .wrap_text h4 {
     font-size: 0.7rem;
@@ -1348,7 +1379,7 @@ nav ul.nav-justified li .shift {
     text-align: center;
   }
   .subscription_wrap .subscrip_two {
-    margin: 15px 0px 20px 0px;
+    margin: 15px 0 20px 0;
   }
   .subscription_wrap .tab-content {
     display: flex;
@@ -1432,6 +1463,9 @@ nav ul.nav-justified li .shift {
     font-size: 1.6rem;
   }
 
+  .trial_subscription_wrap {
+    width: 70%;
+  }
   .trial_subscription_wrap .subscription h1 {
     width: 100%;
     font-size: 1.5rem;
@@ -1444,7 +1478,7 @@ nav ul.nav-justified li .shift {
   }
   .trial_subscription_wrap .entry_wrap {
     width: 75%;
-    margin: 15px 0px 95px 0px;
+    margin: 15px 0 95px 0;
     text-align: center;
   }
   .trial_subscription_wrap .entry_wrap a {
@@ -1454,11 +1488,11 @@ nav ul.nav-justified li .shift {
   }
 
   .bell_wrap {
-    width: 100%;
+    width: 30%;
   }
 
   .client_caption {
-    margin: 50px 0px 0px 20px;
+    margin: 50px 0 0 20px;
     width: 82%;
   }
   .client_caption h4 {
@@ -1471,7 +1505,7 @@ nav ul.nav-justified li .shift {
   }
 
   .client_review_wrap .client_review {
-    margin: 15px 0px 0px 15px;
+    margin: 15px 0 0 15px;
   }
   .client_review_wrap .client_review p {
     width: 100%;
@@ -1490,11 +1524,11 @@ nav ul.nav-justified li .shift {
   }
 
   .client_photo {
-    margin: 15px 0px 0px 15px;
+    margin: 15px 0 0 15px;
   }
 
   .photo_trainings {
-    margin: 40px 0px 30px;
+    margin: 40px 0 30px;
   }
   .photo_trainings h3 {
     font-size: 1.6rem;
@@ -1511,14 +1545,15 @@ nav ul.nav-justified li .shift {
 
   .adress h3 {
     font-size: 1.8rem;
-    margin: 50px 0px 20px;
+    margin: 50px 0 20px;
   }
   .adress p {
     font-size: 0.8rem;
   }
 
   .footer_content {
-    margin-top: 90px;
+    width: 70%;
+    margin-top: 70px;
   }
   .footer_content h1 {
     font-size: 1.4rem;
@@ -1534,21 +1569,21 @@ nav ul.nav-justified li .shift {
     line-height: 30px;
   }
   .footer_content .footer_button .ghost-button-enroll {
-    width: 180px;
+    width: 160px;
     margin-right: 15px;
   }
   .footer_content .footer_button .ghost-button_entry {
-    width: 140px;
+    width: 120px;
   }
 
   .santa_wrap {
-    width: 110%;
-    margin: 45px 0px 50px;
+    width: 30%;
+    margin: 45px 0 50px;
   }
 }
 @media (max-width: 575.99px) {
   nav ul.nav-justified li .shift {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .logo img {
@@ -1557,9 +1592,6 @@ nav ul.nav-justified li .shift {
 
   .replica h1 {
     font-size: 1.4rem;
-  }
-  .replica p {
-    font-size: 0.5rem;
   }
 
   .bt_wrap .ghost-button-rounded-corners {
@@ -1576,7 +1608,7 @@ nav ul.nav-justified li .shift {
     margin-top: 130px;
   }
   .content .wrap_top {
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0 15px 0;
   }
   .content .wrap_text h4 {
     font-size: 0.9rem;
@@ -1611,7 +1643,7 @@ nav ul.nav-justified li .shift {
   }
 
   .new_year_wrap .button_wrap {
-    margin: 35px 0px 0px;
+    margin: 35px 0 0;
   }
 
   .subscription_wrap .subscrip_one,
@@ -1631,22 +1663,25 @@ nav ul.nav-justified li .shift {
     font-size: 1.4rem;
   }
 
+  .trial_subscription_wrap {
+    width: 70%;
+  }
   .trial_subscription_wrap .subscription {
-    margin: 60px 0px 0px 15px;
+    margin: 60px 0 0 15px;
   }
   .trial_subscription_wrap .subscription h1 {
     font-size: 1.1rem;
   }
   .trial_subscription_wrap .sub_content {
     width: 95%;
-    margin: 0px 0px 0px 15px;
+    margin: 0 0 0 15px;
   }
   .trial_subscription_wrap .sub_content p {
-    margin: 5px 0px;
+    margin: 5px 0;
     font-size: 0.6rem;
   }
   .trial_subscription_wrap .entry_wrap {
-    margin: 15px 0px 70px 15px;
+    margin: 15px 0 70px 15px;
     text-align: center;
   }
   .trial_subscription_wrap .entry_wrap a {
@@ -1656,10 +1691,10 @@ nav ul.nav-justified li .shift {
   }
 
   .bell_wrap {
-    width: 95%;
+    width: 30%;
   }
   .bell_wrap img {
-    margin: 40px 0px 0px -15px;
+    margin: 40px 0 0px -15px;
   }
 
   .client_photo {
@@ -1667,11 +1702,11 @@ nav ul.nav-justified li .shift {
   }
 
   .client_caption {
-    margin: 50px 0px 0px 15px;
+    margin: 50px 0 0 15px;
   }
 
   .client_review_wrap .client_review {
-    margin: 10px 0px 0px 15px;
+    margin: 10px 0 0 15px;
   }
   .client_review_wrap .client_review h4 {
     line-height: 2rem;
@@ -1696,7 +1731,7 @@ nav ul.nav-justified li .shift {
   }
 
   .photo_trainings {
-    margin: 30px 0px 20px;
+    margin: 30px 0 20px;
   }
   .photo_trainings h3 {
     font-size: 1.5rem;
@@ -1713,14 +1748,15 @@ nav ul.nav-justified li .shift {
 
   .adress h3 {
     font-size: 1.4rem;
-    margin: 30px 0px 10px;
+    margin: 30px 0 10px;
   }
   .adress p {
     font-size: 0.7rem;
   }
 
   .footer_content {
-    margin: 50px 0px 0px 15px;
+    width: 70%;
+    margin: 50px 0 0 15px;
   }
   .footer_content h1 {
     font-size: 1.2rem;
@@ -1730,9 +1766,10 @@ nav ul.nav-justified li .shift {
   }
   .footer_content .footer_button {
     margin-top: 30px;
+    margin-bottom: 40px;
   }
   .footer_content .footer_button a {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     line-height: 30px;
   }
   .footer_content .footer_button .ghost-button-enroll {
@@ -1743,13 +1780,72 @@ nav ul.nav-justified li .shift {
   }
 
   .santa_wrap {
-    width: 100%;
-    margin: 25px 0px 30px;
+    width: 30%;
+    margin: 25px 0 30px;
   }
 }
 @media (max-width: 479px) {
   .hidden-up {
     display: none !important;
+  }
+
+  .footer_content {
+    width: 70%;
+    margin: 50px 0 0 15px;
+  }
+  .footer_content h1 {
+    font-size: 0.8rem;
+  }
+  .footer_content .footer_button {
+    width: 140%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .footer_content .footer_button a {
+    font-size: 0.6rem;
+    line-height: 24px;
+  }
+  .footer_content .footer_button .ghost-button-enroll {
+    width: 130px;
+  }
+  .footer_content .footer_button .ghost-button_entry {
+    margin-top: 20px;
+    width: 110px;
+  }
+
+  .santa_wrap {
+    width: 30%;
+    margin: 25px 0 30px;
+  }
+}
+@media (max-width: 370px) {
+  .footer_content {
+    width: 70%;
+    margin: 50px 0 0 15px;
+  }
+  .footer_content h1 {
+    font-size: 0.8rem;
+  }
+  .footer_content .footer_button {
+    width: 150%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .footer_content .footer_button a {
+    font-size: 0.6rem;
+    line-height: 24px;
+  }
+  .footer_content .footer_button .ghost-button-enroll {
+    width: 130px;
+  }
+  .footer_content .footer_button .ghost-button_entry {
+    margin-top: 20px;
+    width: 110px;
+  }
+
+  .santa_wrap {
+    width: 30%;
+    margin: 25px 0 30px;
   }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxx   ПОКУПКА АБОНЕМЕНТЕ ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
@@ -1769,12 +1865,12 @@ nav ul.nav-justified li .shift {
   .subscription_payment .payment_left {
     width: 100%;
     background: url(../img/bg-red.png);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
   }
   .subscription_payment .payment_left .subscrip_one,
 .subscription_payment .payment_left .subscrip_two,
 .subscription_payment .payment_left .subscrip_three {
-    margin: 60px 0px 60px;
+    margin: 60px 0 60px;
   }
   .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
 .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
@@ -1807,7 +1903,7 @@ nav ul.nav-justified li .shift {
   }
   .subscription_payment .payment_rigth .close {
     width: 20px;
-    padding: 0px;
+    padding: 0;
     margin: -45px 10px;
   }
   .subscription_payment .payment_rigth .close span {
@@ -1845,17 +1941,17 @@ nav ul.nav-justified li .shift {
     color: #c2c4cc;
     font-family: "GothamProMedium";
     text-transform: uppercase;
-    margin: 15px 10px 10px 0px;
+    margin: 15px 10px 10px 0;
   }
   .subscription_payment .payment_rigth .payment_content .ways_of img {
-    margin: 0px 10px;
+    margin: 0 10px;
   }
   .subscription_payment .payment_rigth .payment_content .application_wrap {
     text-align: center;
   }
   .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
     width: 75.5%;
-    margin: 35px 0px 40px 0px;
+    margin: 35px 0 40px 0;
     background-color: #aac65a;
     color: #fff;
     font-family: "GothamProRegular";
@@ -1868,30 +1964,26 @@ nav ul.nav-justified li .shift {
 /*xxxxxxxxxxxxxxxxxxxxxxxxx   THE-END ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
 @media (min-width: 320px) and (max-width: 479px) {
   .trial_subscription_wrap .subscription {
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0 0 0;
   }
   .trial_subscription_wrap .subscription h1 {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .trial_subscription_wrap .sub_content {
     width: 95%;
-    margin: 0px;
+    margin: 0;
   }
   .trial_subscription_wrap .sub_content p {
     font-size: 0.6rem;
   }
   .trial_subscription_wrap .entry_wrap {
-    margin: 15px 0px 70px 15px;
+    margin: 15px 0 35px 15px;
     text-align: center;
   }
   .trial_subscription_wrap .entry_wrap a {
-    width: 180px;
+    width: 150px;
     font-size: 0.6rem;
-    line-height: 2rem;
-  }
-
-  .bell_wrap {
-    display: none;
+    line-height: 1.7rem;
   }
 
   .new_year_wrap .button_wrap {
@@ -1912,7 +2004,7 @@ nav ul.nav-justified li .shift {
   }
   .new_year_wrap .button_wrap .modal-content .modal-top {
     text-align: center;
-    margin: 0px 20px;
+    margin: 0 20px;
   }
   .new_year_wrap .button_wrap .modal-content .modal-top p {
     margin-top: 55px;
@@ -1922,7 +2014,7 @@ nav ul.nav-justified li .shift {
   }
   .new_year_wrap .button_wrap .modal-content .modal-top .close {
     width: 20px;
-    padding: 0px;
+    padding: 0;
     margin: 3px 35px;
   }
   .new_year_wrap .button_wrap .modal-content .modal-top .close span {
@@ -1941,7 +2033,7 @@ nav ul.nav-justified li .shift {
     /* Safari and Chrome */
   }
   .new_year_wrap .button_wrap .modal-content .form-group {
-    margin: 0px 20px;
+    margin: 0 20px;
     color: #575b66;
   }
   .new_year_wrap .button_wrap .modal-content .form-group .form-control {
@@ -1958,11 +2050,11 @@ nav ul.nav-justified li .shift {
     box-shadow: none;
   }
   .new_year_wrap .button_wrap .modal-content .application_wrap {
-    margin: 0px 20px;
+    margin: 0 20px;
   }
   .new_year_wrap .button_wrap .modal-content .application_wrap .application_button {
     width: 96.5%;
-    margin: 15px 0px 60px 0px;
+    margin: 15px 0 60px 0;
     background-color: #aac65a;
     color: #fff;
     font-family: "GothamProRegular";
@@ -1989,12 +2081,12 @@ nav ul.nav-justified li .shift {
   .subscription_payment .payment_left {
     width: 100%;
     background: url(../img/bg-red.png);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
   }
   .subscription_payment .payment_left .subscrip_one,
 .subscription_payment .payment_left .subscrip_two,
 .subscription_payment .payment_left .subscrip_three {
-    margin: 60px 0px 60px;
+    margin: 60px 0 60px;
   }
   .subscription_payment .payment_left .subscrip_one .gift_massage_gray,
 .subscription_payment .payment_left .subscrip_one .gift_massage_yellow,
@@ -2027,7 +2119,7 @@ nav ul.nav-justified li .shift {
   }
   .subscription_payment .payment_rigth .close {
     width: 20px;
-    padding: 0px;
+    padding: 0;
     margin: -40px 10px;
   }
   .subscription_payment .payment_rigth .close span {
@@ -2065,17 +2157,17 @@ nav ul.nav-justified li .shift {
     color: #c2c4cc;
     font-family: "GothamProMedium";
     text-transform: uppercase;
-    margin: 15px 10px 10px 0px;
+    margin: 15px 10px 10px 0;
   }
   .subscription_payment .payment_rigth .payment_content .ways_of img {
-    margin: 0px 10px;
+    margin: 0 10px;
   }
   .subscription_payment .payment_rigth .payment_content .application_wrap {
     text-align: center;
   }
   .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
     width: 75.5%;
-    margin: 35px 0px 40px 0px;
+    margin: 35px 0 40px 0;
     background-color: #aac65a;
     color: #fff;
     font-family: "GothamProRegular";
@@ -2118,7 +2210,7 @@ nav ul.nav-justified li .shift {
   }
   .new_year_wrap .button_wrap .modal-content .modal-top {
     text-align: center;
-    margin: 0px 20px;
+    margin: 0 20px;
   }
   .new_year_wrap .button_wrap .modal-content .modal-top p {
     margin-top: 55px;
@@ -2147,7 +2239,7 @@ nav ul.nav-justified li .shift {
     /* Safari and Chrome */
   }
   .new_year_wrap .button_wrap .modal-content .form-group {
-    margin: 0px 20px;
+    margin: 0 20px;
     color: #575b66;
   }
   .new_year_wrap .button_wrap .modal-content .form-group .form-control {
@@ -2168,7 +2260,7 @@ nav ul.nav-justified li .shift {
   }
   .new_year_wrap .button_wrap .modal-content .application_wrap .application_button {
     width: 96.5%;
-    margin: 15px 0px 60px 0px;
+    margin: 15px 0 60px 0;
     background-color: #aac65a;
     color: #fff;
     font-family: "GothamProRegular";
@@ -2194,7 +2286,7 @@ nav ul.nav-justified li .shift {
   .subscription_payment .payment_left {
     width: 100%;
     background: url(../img/bg-red.png);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
   }
   .subscription_payment .payment_left .subscrip_one,
 .subscription_payment .payment_left .subscrip_two,
@@ -2232,7 +2324,7 @@ nav ul.nav-justified li .shift {
   }
   .subscription_payment .payment_rigth .close {
     width: 20px;
-    padding: 0px;
+    padding: 0;
     margin: -40px 10px;
   }
   .subscription_payment .payment_rigth .close span {
@@ -2270,17 +2362,17 @@ nav ul.nav-justified li .shift {
     color: #c2c4cc;
     font-family: "GothamProMedium";
     text-transform: uppercase;
-    margin: 15px 10px 10px 0px;
+    margin: 15px 10px 10px 0;
   }
   .subscription_payment .payment_rigth .payment_content .ways_of img {
-    margin: 0px 10px;
+    margin: 0 10px;
   }
   .subscription_payment .payment_rigth .payment_content .application_wrap {
     text-align: center;
   }
   .subscription_payment .payment_rigth .payment_content .application_wrap .application_button {
     width: 100%;
-    margin: 35px 0px 40px 0px;
+    margin: 35px 0 40px 0;
     background-color: #aac65a;
     color: #fff;
     font-family: "GothamProRegular";

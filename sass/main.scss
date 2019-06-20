@@ -62,6 +62,11 @@ h4   { font-size: 20px; font-size: 1.25rem;} /* =20px */
 h5   { font-size: 16px; font-size: 1rem;} /* =16px */
 p    { font-size: 16px; font-size: 1rem;} /* =16px */
 
+
+.navbar-dark .navbar-toggler {
+	outline: none;
+}
+
 .header,
 .main_red{
 	max-width: 1920px;
@@ -134,11 +139,11 @@ nav{
 
 	img{
 		position: relative;
-		margin: -85px 0px 0px -20px;
+		margin: -30px 0 0 -20px;
 	}
 }
 .replica{
-	margin: 30px 0px;
+	margin: 30px 0;
 	color: #fff;
 	h1{
 		font-family: "GothamProBlack";
@@ -213,7 +218,7 @@ nav{
 	}
 
 	.wrap_top{ 
-		margin:45px 0px 90px 0px;
+		margin:45px 0 90px 0;
 		width: 100%;
 	}
 	.wrap_text{
@@ -249,7 +254,7 @@ nav{
 			color: #3b3e47;
 		}
 		p{
-			margin: 20px 0px;
+			margin: 20px 0;
 			font-family: "GothamProRegular";
 			color: #575b66;
 		}
@@ -257,7 +262,7 @@ nav{
 
 	.text_responsive{
 		p{
-			margin: 20px 0px;
+			margin: 20px 0;
 			margin: 0;
 			font-family: "GothamProRegular";
 			color: #575b66;
@@ -311,7 +316,7 @@ nav{
 	.button_wrap{
 		width: 100%;
 		display: block;
-		margin: 35px 0px;
+		margin: 35px 0;
 
 		.active{
 			z-index: 2;
@@ -354,7 +359,7 @@ nav{
 			border: none;
 			.modal-top{
 				text-align: center;
-				margin: 0px 55px;
+				margin: 0 55px;
 				p{  
 					margin-top: 55px;
 					color: #575b66;
@@ -363,7 +368,7 @@ nav{
 				}
 				.close{
 					width: 20px;
-					padding: 0px;
+					padding: 0;
 					span{
 						color: #c2c4cc;
 						width: 20px;
@@ -380,7 +385,7 @@ nav{
 				}
 			}
 			.form-group{
-				margin: 0px 55px;
+				margin: 0 55px;
 				color: #575b66;
 				.form-control{
 					margin: 10px 5px;
@@ -397,10 +402,10 @@ nav{
 				}
 			}
 			.application_wrap{
-				margin: 0px 55px;
+				margin: 0 55px;
 				.application_button{
 					width: 96.5%;
-					margin: 15px 0px 60px 0px;
+					margin: 15px 0 60px 0;
 					background-color: #aac65a;
 					color: #fff;
 					font-family: "GothamProRegular";
@@ -485,7 +490,7 @@ nav{
 	}
 	.gift_massage_red{
 		width: 113%;
-		margin: 45px 0px 50px -17px;
+		margin: 45px 0 50px -17px;
 		p{
 			color: #fff;
 		}
@@ -520,17 +525,17 @@ nav{
 		.subscription_payment{
 			width: 100%;
 			display: flex;
-			justify-content: flex-srart;
+			justify-content: flex-start;
 
 			.payment_left{
 				width: 42.5%;
 				background: url(../img/bg-red.png);
-				border-radius: 15px 0px 0px 15px;
+				border-radius: 15px 0 0 15px;
 
 				.subscrip_one,
 				.subscrip_two,
 				.subscrip_three{
-					margin: 90px 0px 90px;  			    
+					margin: 90px 0 90px;
 					.gift_massage_gray,
 					.gift_massage_yellow{
 						margin: 45px -2px 20px -10px;
@@ -586,12 +591,12 @@ nav{
 					}
 					.ways_of{
 						display: flex;
-						justify-content: flex-srart;
+						justify-content: flex-start;
 						p{
 							color: #c2c4cc;
 							font-family: "GothamProMedium";
 							text-transform: uppercase;
-							margin: 15px 10px 10px 0px;
+							margin: 15px 10px 10px 0;
 						}
 						img{
 							height: 35px;
@@ -601,7 +606,7 @@ nav{
 					.application_wrap{
 						.application_button{
 							width: 75.5%;
-							margin: 35px 0px 40px 0px;
+							margin: 35px 0 40px 0;
 							background-color: #aac65a;
 							color: #fff;
 							font-family: "GothamProRegular";
@@ -664,7 +669,7 @@ nav{
 	.motiv_client{
 		width: 100%;
 		display: block;
-		margin: 55px 0px 70px 0px; 
+		margin: 55px 0 70px 0;
 
 		h4{
 			font-family: "GothamProMedium";
@@ -681,12 +686,21 @@ nav{
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxx   ЗАПИСАТСЯ НА ТРЕНИРОВКУ   xxxxxxxxxxxxxxxxxxxxxxx*/
 
+.write_wrap_block{
+  position: relative;
+  display: flex;
+	flex-direction: row;
+	align-items: stretch;
+  justify-content: start;
+}
+
 .trial_subscription_wrap{
-	display: block;
+	width: 70%;
+  display: inline-block;
 	.subscription{
 		
 		display: inline-block;
-		margin: 135px 0px 0px 0px; 
+		margin: 135px 0 0 0;
 
 		h1{
 			width: 105%;
@@ -714,7 +728,7 @@ nav{
 		width: 75%;
 		display: inline-block;
 		float: none;
-		margin: 55px 0px 135px 0px;
+		margin: 55px 0 135px 0;
 		text-align: center;
 
 		a{
@@ -736,8 +750,11 @@ nav{
 }
 
 .bell_wrap{
+  display: inline-block;
+	width: 25%;
 	img{
-		margin: 100px 0px 0px 30px;
+		margin: 75px 0 0 30px;
+
 	}
 }
 
@@ -813,7 +830,7 @@ nav{
 }
 
 .photo_trainings{
-	margin: 95px 0px 65px;
+	margin: 95px 0 65px;
 
 	h3{
 		font-family: "GothamProBlack";
@@ -850,7 +867,7 @@ nav{
 		line-height: 40px;
 		color: #3b3e47;
 		text-transform: uppercase;
-		margin: 90px 0px 20px;
+		margin: 90px 0 20px;
 	}
 	p{
 		font-family: "GothamProRegular";
@@ -875,6 +892,7 @@ nav{
 
 }
 .footer_content{
+	width: 70%;
 	margin-top: 140px;
 	h1{
 		font-family: "GothamProBlack";
@@ -910,7 +928,7 @@ nav{
 		}
 
 		.ghost-button-enroll{
-			width: 329px;
+			width: 320px;
 			margin-right: 15px;
 
 		}
@@ -921,8 +939,11 @@ nav{
 	}
 }
 .santa_wrap{
-	width: 100%;
+	width: 30%;
 	margin: 95px 20px 90px;
+	img{
+		width: 100%;
+	}
 }
 
 
@@ -1035,16 +1056,20 @@ nav{
 		}
 		.entry_wrap{
 			width: 75%;
-			margin: 55px 0px 135px 0px;
+			margin: 55px 0 135px 0;
 			text-align: center;
 		}
 	}
 	.bell_wrap{
-		width: 115%;
+		width: 28%;
+		img{
+			width: 100%;
+			margin: 120px 0 0 30px;
+		}
 	}
 	.client_review_wrap{
 		.client_review{
-			margin: 80px 0px 0px 25px;
+			margin: 80px 0 0 25px;
 
 			h4{
 				line-height: 2rem;
@@ -1079,13 +1104,14 @@ nav{
 		h3{
 			font-size: 2rem;
 			line-height: 40px;
-			margin: 90px 0px 20px;
+			margin: 90px 0 20px;
 		}
 		p{
 			font-size: 16px;
 		}
 	}
 	.footer_content{
+		width: 70%;
 		margin-top: 140px;
 		h1{
 			font-size: 2.5rem;
@@ -1102,16 +1128,16 @@ nav{
 				line-height: 50px;
 			}
 			.ghost-button-enroll{
-				width: 300px;
+				width: 260px;
 				margin-right: 15px;
 			}
 			.ghost-button_entry{
-				width: 240px;
+				width: 220px;
 			}
 		}
 	}
 	.santa_wrap{
-		width: 110%;
+		width: 30%;
 		margin: 95px 20px 90px;
 	}
 }
@@ -1124,10 +1150,10 @@ nav{
 
 			flex-wrap: wrap;
 			.move_left{
-				margin-left: 0px;
+				margin-left: 0;
 			}
 			.move_right{
-				margin-right: 0px;
+				margin-right: 0;
 			}
 			li.part{
 				white-space: nowrap;
@@ -1140,7 +1166,7 @@ nav{
 			font-size: 1.7rem;
 		}
 		p{
-			font-size: 0.7rem;
+			font-size: 0.8rem;
 		}
 	}
 	.bt_wrap{
@@ -1159,7 +1185,7 @@ nav{
 		}
 		.wrap_top{ 
 			width: 97%;
-			margin:45px 0px 60px 0px;
+			margin:45px 0 60px 0;
 		}
 		.wrap_text{
 			margin-bottom: 30px;
@@ -1183,7 +1209,7 @@ nav{
 			}
 			p{
 				font-size: 0.9rem;
-				margin: 0px;
+				margin: 0;
 			}
 		}
 		.text_responsive{	
@@ -1203,7 +1229,7 @@ nav{
 		}
 	}
 	.trainer_txt_three{
-		margin: 20px 0px;
+		margin: 20px 0;
 		p{
 			width: 102%;
 			font-family: "GothamProRegular";
@@ -1212,7 +1238,7 @@ nav{
 		}
 	}
 	.trainer_photo{
-		margin-top: 0px;
+		margin-top: 0;
 	}
 	
 	.subscription_wrap{
@@ -1250,9 +1276,10 @@ nav{
 		}
 	}
 	.trial_subscription_wrap{
+		width: 70%;
 
 		.subscription{
-			margin: 100px 0px 0px 0px;
+			margin: 100px 0 0 0;
 			h1{
 				font-size: 2rem;
 			}
@@ -1264,18 +1291,22 @@ nav{
 			}
 		}
 		.entry_wrap{
-			margin: 35px 0px 100px 0px;
+			margin: 35px 0 100px 0;
 			text-align: center;
+			a{
+				width: 280px;
+				line-height: 2.725rem;
+			}
 		}
 	}
 	.bell_wrap{
-		width: 100%;
+		width: 30%;
 		img{
-			margin: 75px 0px 0px 0px;
+			margin: 55px 0 0 0;
 		}
 	}
 	.client_caption{
-		margin: 80px 0px 0px 20px;
+		margin: 80px 0 0 20px;
 
 		h4{
 			font-family: "GothamProRegular";
@@ -1295,7 +1326,7 @@ nav{
 	}
 	.client_review_wrap{
 		.client_review{
-			margin: 15px 0px 0px 40px;
+			margin: 15px 0 0 40px;
 			h4{
 				line-height: 2rem;
 			}
@@ -1331,7 +1362,7 @@ nav{
 	}
 
 	.photo_trainings{
-		margin: 55px 0px 45px;
+		margin: 55px 0 45px;
 
 		h3{
 			font-size: 1.7rem;
@@ -1347,7 +1378,7 @@ nav{
 	.adress{
 		h3{
 			font-size: 1.9rem;
-			margin: 60px 0px 20px;
+			margin: 60px 0 20px;
 		}
 		p{
 			font-size: 0.9rem;
@@ -1355,7 +1386,8 @@ nav{
 	}
 
 	.footer_content{
-		margin-top: 90px;
+		width: 70%;
+		margin-top: 70px;
 		h1{
 			font-size: 1.9rem;
 		}
@@ -1378,21 +1410,19 @@ nav{
 		}
 	}
 	.santa_wrap{
-		width: 100%;
+		width: 30%;
 		margin: 50px 20px 50px;
 	}
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
 	.replica{
 		h1{
 			font-size: 1.5rem;
 		}
-		p{
-			font-size: 0.6rem;
-		}
+
 	}
 	.bt_wrap{
 		.ghost-button-rounded-corners {
@@ -1413,7 +1443,7 @@ nav{
 			}
 		}
 		.wrap_top{
-			margin: 15px 0px 15px 0px;
+			margin: 15px 0 15px 0;
 		}
 		.wrap_text{
 			h4{
@@ -1463,7 +1493,7 @@ nav{
 	.subscription_wrap{
 		text-align: center;
 		.subscrip_two{
-			margin: 15px 0px 20px 0px;	
+			margin: 15px 0 20px 0;
 		}
 		.tab-content{
 			display: flex;
@@ -1549,6 +1579,7 @@ nav{
 		}
 	}
 	.trial_subscription_wrap{
+		width: 70%;
 
 		.subscription{
 			h1{
@@ -1564,7 +1595,7 @@ nav{
 		}
 		.entry_wrap{
 			width: 75%;
-			margin: 15px 0px 95px 0px;
+			margin: 15px 0 95px 0;
 			text-align: center;
 			a{
 				width: 220px;
@@ -1574,13 +1605,13 @@ nav{
 		}
 	}
 	.bell_wrap{
-		width: 100%;
+		width: 30%;
 	}
 	
 
 
 	.client_caption{
-		margin: 50px 0px 0px 20px;
+		margin: 50px 0 0 20px;
 		width: 82%;
 
 		h4{
@@ -1595,7 +1626,7 @@ nav{
 	}
 	.client_review_wrap{
 		.client_review{
-			margin: 15px 0px 0px 15px;
+			margin: 15px 0 0 15px;
 			p{
 				width: 100%;
 				font-size: 0.65rem;
@@ -1617,13 +1648,13 @@ nav{
 		}
 	}
 	.client_photo{
-		margin: 15px 0px 0px 15px;
+		margin: 15px 0 0 15px;
 	}
 
 
 
 	.photo_trainings{
-		margin: 40px 0px 30px;
+		margin: 40px 0 30px;
 		h3{
 			font-size: 1.6rem;
 		}
@@ -1639,14 +1670,15 @@ nav{
 	.adress{
 		h3{
 			font-size: 1.8rem;
-			margin: 50px 0px 20px;
+			margin: 50px 0 20px;
 		}
 		p{
 			font-size: 0.8rem;
 		}
 	}
 	.footer_content{
-		margin-top: 90px;
+		width: 70%;
+		margin-top: 70px;
 		h1{
 			font-size: 1.4rem;
 		}
@@ -1660,17 +1692,17 @@ nav{
 				line-height: 30px;
 			}
 			.ghost-button-enroll{
-				width: 180px;
+				width: 160px;
 				margin-right: 15px;
 			}
 			.ghost-button_entry{
-				width: 140px;
+				width: 120px;
 			}
 		}
 	}
 	.santa_wrap{
-		width: 110%;
-		margin: 45px 0px 50px;
+		width: 30%;
+		margin: 45px 0 50px;
 	}
 	
 }
@@ -1678,7 +1710,7 @@ nav{
 @media (max-width: 575.99px) {
 
 	nav ul.nav-justified li .shift {
-		padding-left: 0px;
+		padding-left: 0;
 	}
 
 	.logo{
@@ -1689,9 +1721,6 @@ nav{
 	.replica{
 		h1{
 			font-size: 1.4rem;
-		}
-		p{
-			font-size: 0.5rem;
 		}
 	}
 	.bt_wrap{
@@ -1712,7 +1741,7 @@ nav{
 			}
 		}
 		.wrap_top{
-			margin: 15px 0px 15px 0px;
+			margin: 15px 0 15px 0;
 		}
 		.wrap_text{
 			h4{
@@ -1746,7 +1775,7 @@ nav{
 		}
 	}
 	.new_year_wrap .button_wrap {
-		margin: 35px 0px 0px;
+		margin: 35px 0 0;
 	}
 
 	.subscription_wrap{
@@ -1779,23 +1808,24 @@ nav{
 		}
 	}
 	.trial_subscription_wrap{
+		width: 70%;
 
 		.subscription{
-			margin: 60px 0px 0px 15px;
+			margin: 60px 0 0 15px;
 			h1{
 				font-size: 1.1rem;
 			}
 		}
 		.sub_content{
 			width: 95%;
-			margin: 0px 0px 0px 15px;
+			margin: 0 0 0 15px;
 			p{
-				margin: 5px 0px;
+				margin: 5px 0;
 				font-size: 0.6rem;
 			}
 		}
 		.entry_wrap{
-			margin: 15px 0px 70px 15px;
+			margin: 15px 0 70px 15px;
 			text-align: center;
 			a{
 				width: 155px;
@@ -1805,9 +1835,9 @@ nav{
 		}
 	}
 	.bell_wrap {
-		width: 95%;
+		width: 30%;
 		img{
-			margin: 40px 0px 0px -15px;
+			margin: 40px 0 0px -15px;
 		}
 	}
 	.client_photo{
@@ -1815,11 +1845,11 @@ nav{
 	}
 
 	.client_caption {
-		margin: 50px 0px 0px 15px;
+		margin: 50px 0 0 15px;
 	}
 	.client_review_wrap{
 		.client_review{
-			margin: 10px 0px 0px 15px;
+			margin: 10px 0 0 15px;
 			h4{
 				line-height: 2rem;
 			}
@@ -1845,7 +1875,7 @@ nav{
 
 	}
 	.photo_trainings{
-		margin: 30px 0px 20px;
+		margin: 30px 0 20px;
 		h3{
 			font-size: 1.5rem;
 		}
@@ -1861,14 +1891,15 @@ nav{
 	.adress{
 		h3{
 			font-size: 1.4rem;
-			margin: 30px 0px 10px;
+			margin: 30px 0 10px;
 		}
 		p{
 			font-size: 0.7rem;
 		}
 	}
 	.footer_content{
-		margin: 50px 0px 0px 15px;
+		width: 70%;
+		margin: 50px 0 0 15px;
 		h1{
 			font-size: 1.2rem;
 		}
@@ -1877,8 +1908,9 @@ nav{
 		}
 		.footer_button{
 			margin-top: 30px;
+			margin-bottom: 40px;
 			a{
-				font-size: 0.5rem;
+				font-size: 0.6rem;
 				line-height: 30px;
 			}
 			.ghost-button-enroll{
@@ -1890,8 +1922,8 @@ nav{
 		}
 	}
 	.santa_wrap{
-		width: 100%;
-		margin: 25px 0px 30px;
+		width: 30%;
+		margin: 25px 0 30px;
 	}
 
 }
@@ -1901,6 +1933,69 @@ nav{
 	.hidden-up {
 		display: none !important;
 	}
+	.footer_content{
+		width: 70%;
+		margin: 50px 0 0 15px;
+
+		h1{
+			font-size: 0.8rem;
+		}
+
+		.footer_button{
+			width: 140%;
+			margin-top: 10px;
+			margin-bottom: 40px;
+			a{
+				font-size: 0.6rem;
+				line-height: 24px;
+			}
+			.ghost-button-enroll{
+				width: 130px;
+			}
+			.ghost-button_entry{
+				margin-top: 20px;
+				width: 110px;
+			}
+		}
+	}
+	.santa_wrap{
+		width: 30%;
+		margin: 25px 0 30px;
+	}
+
+}
+
+@media (max-width: 370px) {
+	.footer_content{
+		width: 70%;
+		margin: 50px 0 0 15px;
+
+		h1{
+			font-size: 0.8rem;
+		}
+
+		.footer_button{
+			width: 150%;
+			margin-top: 10px;
+			margin-bottom: 40px;
+			a{
+				font-size: 0.6rem;
+				line-height: 24px;
+			}
+			.ghost-button-enroll{
+				width: 130px;
+			}
+			.ghost-button_entry{
+				margin-top: 20px;
+				width: 110px;
+			}
+		}
+	}
+	.santa_wrap{
+		width: 30%;
+		margin: 25px 0 30px;
+	}
+
 }
 
 
@@ -1920,12 +2015,12 @@ nav{
 		.payment_left{
 			width: 100%;
 			background: url(../img/bg-red.png);
-			border-radius: 15px 15px 0px 0px;
+			border-radius: 15px 15px 0 0;
 
 			.subscrip_one,
 			.subscrip_two,
 			.subscrip_three{
-				margin: 60px 0px 60px;  			    
+				margin: 60px 0 60px;
 				.gift_massage_gray,
 				.gift_massage_yellow{
 					margin: 45px -2px 20px -10px;
@@ -1947,7 +2042,7 @@ nav{
 			width: 100%;
 			.close{
 				width: 20px;
-				padding: 0px;
+				padding: 0;
 				margin: -45px 10px;
 				span{
 					color: #c2c4cc;
@@ -1983,17 +2078,17 @@ nav{
 						color: #c2c4cc;
 						font-family: "GothamProMedium";
 						text-transform: uppercase;
-						margin: 15px 10px 10px 0px;
+						margin: 15px 10px 10px 0;
 					}
 					img{
-						margin: 0px 10px;
+						margin: 0 10px;
 					}
 				}
 				.application_wrap{
 					text-align: center;
 					.application_button{
 						width: 75.5%;
-						margin: 35px 0px 40px 0px;
+						margin: 35px 0 40px 0;
 						background-color: #aac65a;
 						color: #fff;
 						font-family: "GothamProRegular";
@@ -2016,31 +2111,29 @@ nav{
 	.trial_subscription_wrap{
 
 		.subscription{
-			margin: 40px 0px 0px 0px;
+			margin: 40px 0 0 0;
 			h1{
-				font-size: 1.1rem;
+				font-size: 0.8rem;
 			}
 		}
 		.sub_content{
 			width: 95%;
-			margin: 0px;
+			margin: 0;
 			p{
 				font-size: 0.6rem;
 			}
 		}
 		.entry_wrap{
-			margin: 15px 0px 70px 15px;
+			margin: 15px 0 35px 15px;
 			text-align: center;
 			a{
-				width: 180px;
+				width: 150px;
 				font-size: 0.6rem ;
-				line-height: 2rem;
+				line-height: 1.7rem;
 			}
 		}
 	}
-	.bell_wrap {
-		display: none;
-	}
+
 	.new_year_wrap {
 		.button_wrap{
 			/*xxxxxxxxxxxxxxxxxxxxxxxxx  ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
@@ -2056,7 +2149,7 @@ nav{
 				border: none;
 				.modal-top{
 					text-align: center;
-					margin: 0px 20px;
+					margin: 0 20px;
 					p{  
 						margin-top: 55px;
 						color: #575b66;
@@ -2065,7 +2158,7 @@ nav{
 					}
 					.close{
 						width: 20px;
-						padding: 0px;
+						padding: 0;
 						margin: 3px 35px;
 						span{
 							color: #c2c4cc;
@@ -2083,7 +2176,7 @@ nav{
 					}
 				}
 				.form-group{
-					margin: 0px 20px;
+					margin: 0 20px;
 					color: #575b66;
 					.form-control{
 						margin: 10px 5px;
@@ -2100,10 +2193,10 @@ nav{
 					}
 				}
 				.application_wrap{
-					margin: 0px 20px;
+					margin: 0 20px;
 					.application_button{
 						width: 96.5%;
-						margin: 15px 0px 60px 0px;
+						margin: 15px 0 60px 0;
 						background-color: #aac65a;
 						color: #fff;
 						font-family: "GothamProRegular";
@@ -2137,12 +2230,12 @@ nav{
 		.payment_left{
 			width: 100%;
 			background: url(../img/bg-red.png);
-			border-radius: 15px 15px 0px 0px;
+			border-radius: 15px 15px 0 0;
 
 			.subscrip_one,
 			.subscrip_two,
 			.subscrip_three{
-				margin: 60px 0px 60px;  			    
+				margin: 60px 0 60px;
 				.gift_massage_gray,
 				.gift_massage_yellow{
 					margin: 45px -2px 20px -10px;
@@ -2164,7 +2257,7 @@ nav{
 			width: 100%;
 			.close{
 				width: 20px;
-				padding: 0px;
+				padding: 0;
 				margin: -40px 10px;
 				span{
 					color: #c2c4cc;
@@ -2200,17 +2293,17 @@ nav{
 						color: #c2c4cc;
 						font-family: "GothamProMedium";
 						text-transform: uppercase;
-						margin: 15px 10px 10px 0px;
+						margin: 15px 10px 10px 0;
 					}
 					img{
-						margin: 0px 10px;
+						margin: 0 10px;
 					}
 				}
 				.application_wrap{
 					text-align: center;
 					.application_button{
 						width: 75.5%;
-						margin: 35px 0px 40px 0px;
+						margin: 35px 0 40px 0;
 						background-color: #aac65a;
 						color: #fff;
 						font-family: "GothamProRegular";
@@ -2260,7 +2353,7 @@ nav{
 				border: none;
 				.modal-top{
 					text-align: center;
-					margin: 0px 20px;
+					margin: 0 20px;
 					p{  
 						margin-top: 55px;
 						color: #575b66;
@@ -2287,7 +2380,7 @@ nav{
 					}
 				}
 				.form-group{
-					margin: 0px 20px;
+					margin: 0 20px;
 					color: #575b66;
 					.form-control{
 						margin: 10px 5px;
@@ -2307,7 +2400,7 @@ nav{
 					margin: 0px 20px;
 					.application_button{
 						width: 96.5%;
-						margin: 15px 0px 60px 0px;
+						margin: 15px 0 60px 0;
 						background-color: #aac65a;
 						color: #fff;
 						font-family: "GothamProRegular";
@@ -2337,7 +2430,7 @@ nav{
 			.payment_left{
 				width: 100%;
 				background: url(../img/bg-red.png);
-				border-radius: 15px 15px 0px 0px;
+				border-radius: 15px 15px 0 0;
 
 				.subscrip_one,
 				.subscrip_two,
@@ -2364,7 +2457,7 @@ nav{
 				width: 100%;
 				.close{
 					width: 20px;
-					padding: 0px;
+					padding: 0;
 					margin: -40px 10px;
 					span{
 						color: #c2c4cc;
@@ -2400,17 +2493,17 @@ nav{
 							color: #c2c4cc;
 							font-family: "GothamProMedium";
 							text-transform: uppercase;
-							margin: 15px 10px 10px 0px;
+							margin: 15px 10px 10px 0;
 						}
 						img{
-							margin: 0px 10px;
+							margin: 0 10px;
 						}
 					}
 					.application_wrap{
 						text-align: center;
 						.application_button{
 							width: 100%;
-							margin: 35px 0px 40px 0px;
+							margin: 35px 0 40px 0;
 							background-color: #aac65a;
 							color: #fff;
 							font-family: "GothamProRegular";
