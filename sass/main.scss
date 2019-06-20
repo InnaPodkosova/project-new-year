@@ -266,7 +266,7 @@ nav{
 	.text_too_responsive{
 		margin-bottom: 100px;
 		p{
-			margin: 20px 0px;
+			margin: 20px 0;
 			font-family: "GothamProRegular";
 			color: #575b66;
 		}
@@ -320,8 +320,10 @@ nav{
 			border: none;
 		}
 
-		a {
+		button {
+			background-color: rgba(255,255,255,0);
 			display: inline-block;
+          margin: 10px 10px;
 			width: 200px;
 			color: #fff;
 			border-radius: 22px;
@@ -330,6 +332,7 @@ nav{
 			font-size: 0.875rem;
 			line-height: 2.8125rem;
 			outline: none;
+			border: none;
 			text-decoration: none;
 			&:hover{
 				background-color: #fac746;
@@ -744,57 +747,65 @@ nav{
 	width: 100%;
 	position: relative;
 
-	.client_review{
-		margin-top: 80px;
+	.client_review {
+      margin-top: 80px;
 
-		h4{
-			font-family: "GothamProRegular";
-			text-transform: uppercase;
-			line-height: 4rem;
-			color: #8a8e99;
-		}
-		h3{
-			font-family: "GothamProBlack";
-			font-size: 2rem;
-			line-height: 2.5rem;
-			color: #3b3e47;
-			margin-bottom: 25px;
-		}
-		p{
-			width: 100%;
-			font-family: "GothamProRegular";
-			color: #575b66;
-		}
+      h4 {
+        font-family: "GothamProRegular";
+        text-transform: uppercase;
+        line-height: 4rem;
+        color: #8a8e99;
+      }
+      h3 {
+        font-family: "GothamProBlack";
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #3b3e47;
+        margin-bottom: 25px;
+      }
+      .review_cl{
+         display: block;
+         position: relative;
+          p {
+            width: 100%;
+            font-family: "GothamProRegular";
+            color: #575b66;
+         }
+       }
 	}
-	.pictures{
-		margin: 55px 0px;
+  .pictures{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-top: 60px;
 
-		a{
-			margin-right: 25px;
-			display: inline-block;
-			z-index: 10;
-			outline: none;
+    a {
+      outline: none;
 
-			img{
-				width: 120px;
-			}
-			.pic{
-				position: absolute;
-				width: 120px;
-				height: 120px;
-				margin-top: -120px;
-				z-index: 20;
-				&:hover{
-					background: url(../img/cursor.png) no-repeat;
-					background-color: rgba( 0,0,0,0.6);
-					background-position: center center;
+      img{
+        width: 120px;
+        height: 120px;
+        object-fit: fill;
+        margin-right: 20px;
+        z-index: 10;
+      }
+      .pic {
+        position: absolute;
+        top: 0;
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+        z-index: 20;
+        background: rgba(0, 0, 0, 0.5);
 
-				}
-			}
-
-		}
-
-	}
+        &:hover {
+          background: url(../img/cursor.png) no-repeat;
+          background-color: rgba(0, 0, 0, 0.6);
+          background-position: center center;
+        }
+      }
+    }
+  }
 }
 
 .client_photo{
@@ -1048,15 +1059,7 @@ nav{
 				font-size: 1rem;
 			}
 		}
-		.pictures{
-			text-align: center;
-			margin: 55px 0px;
 
-			a{
-				display: inline-block;
-				outline: none;
-			}
-		}
 	}
 	.client_photo{
 		margin-top: 130px;
@@ -1311,16 +1314,14 @@ nav{
 			}
 		}
 		.pictures{
-			margin: 20px 0px;
 			a{
 				img{
-					width: 80px;
+					width: 100px;
+                  height: 100px;
 				}
-				margin: 10px;
 				.pic{
-					width: 80px;
-					height: 80px;
-					margin-top: -80px;
+					width: 100px;
+					height: 100px;
 				}
 			}
 		}
@@ -1602,18 +1603,16 @@ nav{
 			
 		}
 		.pictures{
-			margin: 25px 0px 10px 0px ;
-
+              margin-top: 40px;
 			a{
-				margin-right: 10px;
-				img{
-					width: 70px;
-					.pic{
-						width: 85px;
-						height: 85px;
-						margin-top: -185px;
-					}
-				}
+				img {
+                  width: 85px;
+                  height: 85px;
+                }
+				.pic {
+                  width: 85px;
+                  height: 85px;
+                }
 			}
 		}
 	}
@@ -1833,30 +1832,18 @@ nav{
 			p{
 				width: 92.5%;
 				font-size: 0.85rem;
+              text-align: justify;
 			}
 			.client_content{
 				display: none;
 			}
 		}
-		.pictures{
-			margin: 20px 0px;
-			a{
-				img{
-					width: 80px;
-				}
-				margin: 10px;
-				.pic{
-					width: 80px;
-					height: 80px;
-					margin-top: -80px;
-				}
-			}
-		}
+      .pictures{
+      justify-content: center;
+        margin-bottom: 40px;
+      }
+
 	}
-
-
-
-
 	.photo_trainings{
 		margin: 30px 0px 20px;
 		h3{
@@ -2238,31 +2225,26 @@ nav{
 	}
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxx   THE-END ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
-
-
-
 @media (min-width: 0px) and (max-width: 320px) {
-
 	.client_review_wrap {
 		.pictures {
 			a {
-				margin: 5px;
 
-				img{
-					width: 85px;
+				img {
+                  width: 55px;
+                  height: 55px;
+                }
 
 					.pic {
 						
-						width: 85px;
-						height: 85px;
-						margin-top: -85px;
+						width: 55px;
+						height: 55px;
 						z-index: 20;
 					}
-				}
+
 			}
 		}
 	}
-
 	.new_year_wrap {
 		.button_wrap{
 			/*xxxxxxxxxxxxxxxxxxxxxxxxx  ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
@@ -2336,12 +2318,9 @@ nav{
 					}
 				}
 			}
-
-
 			/*xxxxxxxxxxxxxxxxxxxxxxxxx  THE_END ПОПАП-ЗАЯВКА   xxxxxxxxxxxxxxxxxxxxxxx*/
 		}
 	}
-
 	/*xxxxxxxxxxxxxxxxxxxxxxxxx   ПОКУПКА АБОНЕМЕНТЕ ПОПАП   xxxxxxxxxxxxxxxxxxxxxxx*/
 
 	@media (min-width: 200px) {
