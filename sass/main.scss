@@ -69,16 +69,17 @@ p    { font-size: 16px; font-size: 1rem;} /* =16px */
 
 .header,
 .main_red{
-	max-width: 1920px;
+	width: 100%;
 	height: auto;
 	background: url(../img/bg-red.png);
+	background-size: cover;
 }
 .main_white{
-	max-width: 1920px;
+	width: 100%;
 	background: #fff;
 }
 .main_grey{
-	max-width: 1920px;
+	width: 100%;
 	background: #f5f5f7;
 	display: flex;
 	justify-content: center;
@@ -875,7 +876,7 @@ nav{
 	}
 }
 .main_maps{
-	max-width: 1920px;
+	width: 100%;
 	.map-responsive{
 		overflow:hidden;
 		padding-bottom: 36%;
